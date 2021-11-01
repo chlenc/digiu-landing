@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Column } from "@src/components/Flex";
 import React from "react";
 import Layout from "../../components/Layout";
 
@@ -69,11 +70,33 @@ const Container = styled.div`
     flex-direction: row;
   }
 `;
-const Img = styled.img`
+
+const ImgContainer = styled.div`
+  position: relative;
   width: 264px;
-  @media (min-width: 480px) {
+  height: 312px;
+  margin-bottom: 32px;
+  margin-right: 34px;
+  @media (min-width: 980px) {
+    max-width: 640px;
+    margin-right: 140px;
     width: 640px;
-    padding-bottom: 64px;
+    height: 720px;
+    margin-bottom: 64px;
+  }
+  @media (min-width: 1280px) {
+    margin-right: 0px;
+  }
+`;
+
+const Img = styled.img`
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 264px;
+  @media (min-width: 980px) {
+    width: 640px;
   }
 `;
 
@@ -94,7 +117,6 @@ const items = [
 ];
 const Row = styled.div`
   display: flex;
-  align-items: center;
 
   img {
     width: 28px;
@@ -102,18 +124,32 @@ const Row = styled.div`
     padding-right: 12px;
   }
 
-  span {
+  .title {
     font-size: 12px;
     line-height: 20px;
-    padding: 16px 0;
+    margin-bottom: 12px;
     @media (min-width: 480px) {
-      padding: 20px 0;
       font-size: 20px;
       line-height: 28px;
     }
     @media (min-width: 1280px) {
-      padding: 32px 0;
+      margin-bottom: 20px;
       max-width: 428px;
+    }
+  }
+  .subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    color: #989cb1;
+    margin-bottom: 32px;
+    @media (min-width: 480px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 428px;
+      margin-bottom: 44px;
     }
   }
 `;
@@ -128,12 +164,17 @@ const Venture: React.FC<IProps> = () => {
         следующих раундах.
       </Subtitle>
       <Container>
-        <Img src="/images/venture/spots.png" alt="img" />
+        <ImgContainer>
+          <Img src="/images/venture/spots.png" alt="img" />
+        </ImgContainer>
         <div>
           {items.map((item) => (
             <Row key={item.title}>
               <img src="/radioBtn.svg" />
-              <span>{item.title}</span>
+              <Column>
+                <div className="title">{item.title}</div>
+                <div className="subtitle">{item.subtitle}</div>
+              </Column>
             </Row>
           ))}
         </div>

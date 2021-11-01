@@ -67,11 +67,32 @@ const Container = styled.div`
     flex-direction: row;
   }
 `;
-const Img = styled.img`
+const ImgContainer = styled.div`
+  position: relative;
   width: 264px;
-  @media (min-width: 480px) {
+  height: 312px;
+  margin-bottom: 32px;
+  margin-right: 34px;
+  @media (min-width: 980px) {
+    max-width: 640px;
+    margin-right: 140px;
     width: 640px;
-    padding-bottom: 64px;
+    height: 720px;
+    margin-bottom: 64px;
+  }
+  @media (min-width: 1280px) {
+    margin-right: 0px;
+  }
+`;
+
+const Img = styled.img`
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 264px;
+  @media (min-width: 980px) {
+    width: 640px;
   }
 `;
 
@@ -110,13 +131,15 @@ const Management: React.FC<IProps> = () => {
   return (
     <Root>
       <PageTitle>Управление активами</PageTitle>
-      <Subtitle>
+      <Subtitle color="#091131">
         DigiU.Wealth - инвестиционный продукт экосистемы , приносящий
         ежемесячную прибыль без риска просадки депозита в ETH, BTC, USDT с
         октября 2020 года.
       </Subtitle>
       <Container>
-        <Img src="/images/management/microwave.png" alt="microwave" />
+        <ImgContainer>
+          <Img src="/images/management/microwave.png" alt="microwave" />
+        </ImgContainer>
 
         <div>
           {items.map((item) => (

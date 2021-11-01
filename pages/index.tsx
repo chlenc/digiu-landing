@@ -12,6 +12,9 @@ import Management from "@layout/Management";
 import AI from "@layout/AI";
 import Venture from "@layout/Venture";
 import BecomeInvestor from "@layout/BecomeInvestor";
+import Partners from "@layout/Partners";
+import Community from "@layout/Community";
+import Education from "@layout/Education";
 
 const Root = styled.div``;
 
@@ -46,6 +49,9 @@ const Home: NextPage = () => {
         <AI />
         <Venture />
         <BecomeInvestor />
+        <Partners />
+        <Community />
+        {/*<Education />*/}
       </Main>
       <Footer />
     </Root>

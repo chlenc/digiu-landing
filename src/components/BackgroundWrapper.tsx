@@ -8,12 +8,12 @@ const BackgroundWrapper = styled.div<{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(${({ background }) => background})
-    ${({ position }) => position ?? "center"} no-repeat;
 
+  background: ${({ isColor, background, position }) =>
+    isColor
+      ? background
+      : `url(${background}) ${position ?? "center"} no-repeat`};
   background-size: cover;
   width: 100%;
 `;
-// background: ${({ isColor, background, position }) =>
-//   isColor ? background : `url(${background}}) ${position ?? "center"} no-repeat`};
 export default BackgroundWrapper;
