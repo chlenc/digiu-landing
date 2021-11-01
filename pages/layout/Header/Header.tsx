@@ -17,8 +17,8 @@ const Root = styled(Layout)`
     padding-top: 22px;
   }
   @media (min-width: 1280px) {
-    padding-top: 40px;
     max-width: 100%;
+    padding: 40px 40px 0 40px;
   }
 `;
 
@@ -34,7 +34,7 @@ const Menu = styled.img`
 `;
 
 const Lang = styled.div`
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -43,11 +43,11 @@ const Lang = styled.div`
 
 const Header: React.FC<IProps> = ({ ...rest }) => (
   <Root {...rest}>
-    <Logo src="/logo.png" alt="logo" />
+    <Logo src="/images/head/logo.png" alt="logo" />
     <Row style={{ width: "auto" }}>
       <Lang>RU</Lang>
       <SizedBox width={30} />
-      <Menu src="/menu.svg" alt="menu" />
+      <Menu src="/images/head/menu.svg" alt="menu" />
     </Row>
   </Root>
 );

@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import News from "./layout/News";
+import Ecosystem from "./layout/Ecosystem";
 
 const Root = styled.div``;
 
@@ -14,9 +15,17 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(134.31deg, #316bff 25.3%, #747afe 89.38%);
   min-width: 100vw;
   position: relative;
+`;
+
+const HeadWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/images/head/bg.png) right no-repeat;
+  background-size: cover;
+  width: 100%;
 `;
 
 const Home: NextPage = () => {
@@ -29,9 +38,12 @@ const Home: NextPage = () => {
       </Head>
 
       <Main>
-        <Header style={{ position: "absolute", top: 0, left: 0, right: 0 }} />
-        <HomePage />
+        <HeadWrapper>
+          <Header style={{ position: "absolute", top: 0, left: 0, right: 0 }} />
+          <HomePage />
+        </HeadWrapper>
         <News />
+        <Ecosystem />
       </Main>
       <Footer />
     </Root>

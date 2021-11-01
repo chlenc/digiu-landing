@@ -6,7 +6,7 @@ const Layout = styled.div`
     padding: 0 24px;
   }
   @media (min-width: 1280px) {
-    padding: 0 40px;
+    padding: 0px 0px;
     max-width: 1200px;
   }
 `;

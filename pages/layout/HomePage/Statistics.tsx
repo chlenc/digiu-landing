@@ -36,6 +36,9 @@ const Title = styled.div`
   line-height: 32px;
   text-align: center;
   color: #ffffff;
+  @media (min-width: 1280px) {
+    text-align: left;
+  }
 `;
 const Subtitle = styled.div`
   font-family: Montserrat;
@@ -46,6 +49,9 @@ const Subtitle = styled.div`
   text-align: center;
   white-space: pre-wrap;
   color: #ffffff;
+  @media (min-width: 1280px) {
+    text-align: left;
+  }
 `;
 
 const StatisticsRow = styled.div`
