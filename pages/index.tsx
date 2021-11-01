@@ -1,11 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import HomePage from "./layout/HomePage";
+import HomePage from "../src/layout/HomePage";
 import styled from "@emotion/styled";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
-import News from "./layout/News";
-import Ecosystem from "./layout/Ecosystem";
+import Footer from "../src/layout/Footer";
+import Header from "../src/layout/Header";
+import News from "../src/layout/News";
+import Ecosystem from "../src/layout/Ecosystem";
+import Laboratory from "@layout/Laboratory";
+import BackgroundWrapper from "@components/BackgroundWrapper";
+import Management from "@layout/Management";
+import AI from "@layout/AI";
+import Venture from "@layout/Venture";
+import BecomeInvestor from "@layout/BecomeInvestor";
 
 const Root = styled.div``;
 
@@ -19,15 +25,6 @@ const Main = styled.main`
   position: relative;
 `;
 
-const HeadWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url(/images/head/bg.png) right no-repeat;
-  background-size: cover;
-  width: 100%;
-`;
-
 const Home: NextPage = () => {
   return (
     <Root>
@@ -38,12 +35,17 @@ const Home: NextPage = () => {
       </Head>
 
       <Main>
-        <HeadWrapper>
+        <BackgroundWrapper background="/images/head/bg.png" position="left">
           <Header style={{ position: "absolute", top: 0, left: 0, right: 0 }} />
           <HomePage />
-        </HeadWrapper>
+        </BackgroundWrapper>
         <News />
         <Ecosystem />
+        <Laboratory />
+        <Management />
+        <AI />
+        <Venture />
+        <BecomeInvestor />
       </Main>
       <Footer />
     </Root>

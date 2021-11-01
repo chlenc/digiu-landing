@@ -20,7 +20,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["pages/components/*"]
+      "@src/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@layout/*": ["src/layout/*"]
     }
   },
   "include": [
