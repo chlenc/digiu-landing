@@ -33,6 +33,7 @@ const Title = styled.div`
   text-align: center;
   color: #091131;
   padding-bottom: 32px;
+  max-width: 249px;
   @media (min-width: 480px) {
     font-size: 40px;
     line-height: 56px;
@@ -48,11 +49,7 @@ const BecomeInvestor: React.FC<IProps> = () => {
         <Title>
           Станьте совладельцем сотен стартапов в области блокчейн и ИИ
         </Title>
-        <Button
-          onClick={() => (window.location.href = "google.com")}
-          background="#316bff"
-          color="#ffffff"
-        >
+        <Button blue onClick={() => (window.location.href = "google.com")}>
           Стать инвестором DigiU
         </Button>
       </Root>

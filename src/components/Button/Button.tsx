@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
 
-const Button = styled.button<{ background?: string; color?: string }>`
-  background: ${({ background }) => (background ? background : "#ffffff")};
-  color: ${({ color }) => (color ? color : "#316bff")};
+const Button = styled.button<{
+  blue?: boolean;
+}>`
+  background: ${({ blue }) => (blue ? "#316bff" : "#ffffff")};
+  color: ${({ blue }) => (blue ? "#ffffff" : "#316bff")};
   border-radius: 10px;
   height: 48px;
   max-width: 100%;
@@ -15,6 +17,7 @@ const Button = styled.button<{ background?: string; color?: string }>`
   border: none;
   box-shadow: none;
   outline: none;
+  cursor: pointer;
 
   @media (min-width: 480px) {
     height: 60px;

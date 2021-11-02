@@ -29,7 +29,6 @@ const Title = styled.div`
   font-size: 24px;
   line-height: 32px;
   color: #091131;
-  margin-bottom: 32px;
   width: 100%;
   text-align: left;
   @media (min-width: 480px) {
@@ -75,8 +74,7 @@ const ImgContainer = styled.div`
   position: relative;
   width: 264px;
   height: 312px;
-  margin-bottom: 32px;
-  margin-right: 34px;
+  margin: 16px 34px 16px 0;
   @media (min-width: 980px) {
     max-width: 640px;
     margin-right: 140px;
@@ -117,17 +115,31 @@ const items = [
 ];
 const Row = styled.div`
   display: flex;
+  font-family: Montserrat;
+  margin-bottom: 32px;
+
+  @media (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 44px;
+  }
 
   img {
-    width: 28px;
-    height: 28px;
-    padding-right: 12px;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    @media (min-width: 480px) {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   .title {
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 14px;
     line-height: 20px;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
     @media (min-width: 480px) {
       font-size: 20px;
       line-height: 28px;
@@ -137,19 +149,21 @@ const Row = styled.div`
       max-width: 428px;
     }
   }
+
   .subtitle {
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 20px;
     color: #989cb1;
-    margin-bottom: 32px;
     @media (min-width: 480px) {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 40px;
+      //margin-bottom: 40px;
     }
     @media (min-width: 1280px) {
       max-width: 428px;
-      margin-bottom: 44px;
+      //margin-bottom: 44px;
     }
   }
 `;

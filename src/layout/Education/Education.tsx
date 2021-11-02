@@ -3,6 +3,8 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Subtitle from "@components/Subtitile";
 import VideoItem from "@layout/Education/VideoItem";
+import bg from "../../../public/images/education/bg.png";
+import Button from "@components/Button";
 
 interface IProps {}
 
@@ -32,6 +34,7 @@ const Title = styled.div`
   color: #091131;
   margin-bottom: 32px;
   width: 100%;
+  text-align: center;
   @media (min-width: 480px) {
     font-size: 40px;
     line-height: 48px;
@@ -74,6 +77,34 @@ const TechnologiesList = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
+const FreeVideo = styled.div`
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 64px 59px;
+  width: 100%;
+  margin-top: 120px;
+  background: url("/images/laboratory/bg.png") bottom no-repeat;
+
+  .text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  img {
+    margin: 40px 0;
+  }
+
+  @media (min-width: 480px) {
+    display: flex;
+  }
+`;
 const Education: React.FC<IProps> = () => {
   return (
     <Root>
@@ -88,7 +119,42 @@ const Education: React.FC<IProps> = () => {
           <VideoItem {...item} key={item.title} />
         ))}
       </TechnologiesList>
+      <FreeVideo>
+        <div className="text">
+          Бесплатный курс:
+          <br /> Как стать венчурным инвестором?
+        </div>
+
+        <div style={{ position: "relative" }}>
+          <img
+            src="/images/education/venture-capital.png"
+            alt="venture-capital"
+          />
+          <PlayBtn />
+        </div>
+        <Button blue>Получить доступ</Button>
+      </FreeVideo>
     </Root>
   );
 };
 export default Education;
+const BtnWrapper = styled.div`
+  position: absolute;
+  top: calc(50% - 24px);
+  right: calc(50% - 24px);
+`;
+const PlayBtn = () => (
+  <BtnWrapper>
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      cursor="pointer"
+    >
+      <circle cx="24" cy="24" r="24" fill="white" />
+      <path d="M34 24L19 32.6603L19 15.3397L34 24Z" fill="#6584FF" />
+    </svg>
+  </BtnWrapper>
+);

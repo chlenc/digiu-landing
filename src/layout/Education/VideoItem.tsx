@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import BackgroundWrapper from "@components/BackgroundWrapper";
 
 interface IProps {
   title: string;
@@ -12,14 +13,15 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: #ffffff;
   border: 1px solid #e2e8ff;
   border-radius: 10px;
+  padding: 16px;
 
   .icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 32px;
+    width: 40px;
+    height: 40px;
   }
 
   .title {
@@ -29,6 +31,7 @@ const Root = styled.div`
     font-size: 14px;
     line-height: 24px;
     color: #091131;
+    text-align: center;
     padding: 20px 0 12px;
   }
 
@@ -43,11 +46,9 @@ const Root = styled.div`
   }
 
   @media (min-width: 480px) {
-    //height: 346px;
-    padding: 64px 12px;
     .icon {
-      width: 64px;
-      height: 64px;
+      width: 54px;
+      height: 54px;
     }
 
     .title {
@@ -60,9 +61,6 @@ const Root = styled.div`
       font-size: 16px;
       line-height: 24px;
     }
-  }
-  @media (min-width: 1280px) {
-    padding: 107px 24px;
   }
 `;
 const Star = styled.img`
@@ -79,6 +77,10 @@ const Img = styled.img`
   width: 256px;
   padding: 28px 16px 0;
   cursor: pointer;
+
+  @media (min-width: 610px) {
+    width: 270px;
+  }
 `;
 const VideoItem: React.FC<IProps> = ({ title, subtitle, img, url }) => {
   return (

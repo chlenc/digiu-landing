@@ -42,6 +42,24 @@ const Images = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
 
+  @media (min-width: 480px) {
+    display: flex;
+    grid-template-columns: none;
+    justify-content: center;
+    gap: 64px;
+    overflow: scroll;
+    width: 100%;
+  }
+
+  .hide {
+    @media (min-width: 480px) {
+      display: none;
+    }
+    @media (min-width: 1280px) {
+      display: block;
+    }
+  }
+
   img {
     width: 64px;
     height: 64px;
@@ -66,8 +84,8 @@ const Partners: React.FC<IProps> = () => {
         <img src="/images/partners/2.png" alt="partner" />
         <img src="/images/partners/3.png" alt="partner" />
         <img src="/images/partners/4.png" alt="partner" />
-        <img src="/images/partners/5.png" alt="partner" />
-        <img src="/images/partners/6.png" alt="partner" />
+        <img src="/images/partners/5.png" className="hide" alt="partner" />
+        <img src="/images/partners/6.png" className="hide" alt="partner" />
       </Images>
     </Root>
   );

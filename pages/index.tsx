@@ -15,6 +15,7 @@ import BecomeInvestor from "@layout/BecomeInvestor";
 import Partners from "@layout/Partners";
 import Community from "@layout/Community";
 import Education from "@layout/Education";
+import Mailing from "@layout/Mailing";
 
 const Root = styled.div``;
 
@@ -51,7 +52,8 @@ const Home: NextPage = () => {
         <BecomeInvestor />
         <Partners />
         <Community />
-        {/*<Education />*/}
+        <Education />
+        <Mailing />
       </Main>
       <Footer />
     </Root>
