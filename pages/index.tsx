@@ -52,7 +52,7 @@ const Home: NextPage = () => {
         <BecomeInvestor />
         <Partners />
         <Community />
-        <Education />
+        {/*<Education />*/}
         <Mailing />
         <Footer />
       </Main>
