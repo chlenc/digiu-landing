@@ -119,21 +119,21 @@ const Education: React.FC<IProps> = () => {
           <VideoItem {...item} key={item.title} />
         ))}
       </TechnologiesList>
-      <FreeVideo>
-        <div className="text">
-          Бесплатный курс:
-          <br /> Как стать венчурным инвестором?
-        </div>
+      {/*<FreeVideo>*/}
+      {/*  <div className="text">*/}
+      {/*    Бесплатный курс:*/}
+      {/*    <br /> Как стать венчурным инвестором?*/}
+      {/*  </div>*/}
 
-        <div style={{ position: "relative" }}>
-          <img
-            src="/images/education/venture-capital.png"
-            alt="venture-capital"
-          />
-          <PlayBtn />
-        </div>
-        <Button blue>Получить доступ</Button>
-      </FreeVideo>
+      {/*  <div style={{ position: "relative" }}>*/}
+      {/*    <img*/}
+      {/*      src="/images/education/venture-capital.png"*/}
+      {/*      alt="venture-capital"*/}
+      {/*    />*/}
+      {/*    <PlayBtn />*/}
+      {/*  </div>*/}
+      {/*  <Button>Получить доступ</Button>*/}
+      {/*</FreeVideo>*/}
     </Root>
   );
 };

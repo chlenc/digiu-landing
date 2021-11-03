@@ -54,8 +54,8 @@ const Home: NextPage = () => {
         <Community />
         <Education />
         <Mailing />
+        <Footer />
       </Main>
-      <Footer />
     </Root>
   );
 };

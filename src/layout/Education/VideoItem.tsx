@@ -74,12 +74,12 @@ const Star = styled.img`
 `;
 
 const Img = styled.img`
-  width: 256px;
+  max-width: 256px;
   padding: 28px 16px 0;
   cursor: pointer;
 
   @media (min-width: 610px) {
-    width: 270px;
+    max-width: 270px;
   }
 `;
 const VideoItem: React.FC<IProps> = ({ title, subtitle, img, url }) => {
