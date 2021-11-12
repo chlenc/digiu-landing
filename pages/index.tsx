@@ -14,7 +14,6 @@ import Venture from "@layout/Venture";
 import BecomeInvestor from "@layout/BecomeInvestor";
 import Partners from "@layout/Partners";
 import Community from "@layout/Community";
-import Education from "@layout/Education";
 import Mailing from "@layout/Mailing";
 
 const Root = styled.div``;
@@ -25,7 +24,6 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 100vw;
   position: relative;
 `;
 
@@ -52,7 +50,7 @@ const Home: NextPage = () => {
         <BecomeInvestor />
         <Partners />
         <Community />
-        {/*<Education />*/}
+        <Education />
         <Mailing />
         <Footer />
       </Main>

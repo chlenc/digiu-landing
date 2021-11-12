@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import Layout from "../../components/Layout";
-import BackgroundWrapper from "@components/BackgroundWrapper";
+import WithBg from "@components/Background";
 import Subtitle from "@components/Subtitile";
 import TechnologyItem from "@layout/AI/TechnologyItem";
 
@@ -56,16 +56,19 @@ const EcosystemList = styled.div`
 const cards = [
   {
     title: "DigiU.Voice",
+    img: "/images/ai/voice.png",
     subtitle:
       "Запатентованная технология клонирования речи. \nDigiU.Voice трансформирует текст в речь с помощью ИИ-технологии text-to-speech, позволяет воспроизводить интонации, акценты и паузы конкретного человека.",
   },
   {
     title: "DigiU.Vision",
+    img: "/images/ai/vision.png",
     subtitle:
       "DigiU.Vision технология компьютерного зрения позволяющая различать пердметы, возраст, эмоции людей. ",
   },
   {
     title: "DigiU.Prophert",
+    img: "/images/ai/prophert.png",
     subtitle:
       "Технология предективной аналитики позволяющая предсказывать движение рынка с использовнием нейросетей.",
   },
@@ -86,9 +89,9 @@ const TechnologiesList = styled.div`
 `;
 const AI: React.FC<IProps> = () => {
   return (
-    <BackgroundWrapper background="/images/head/bg.png" position="bottom">
+    <WithBg background="/images/bg3.jpg" position="center top">
       <Root>
-        <PageTitle>Разработки в области Искусственного интеллекта</PageTitle>
+        <PageTitle>Разработки в области ИИ</PageTitle>
         <Subtitle>
           Лаборатория ИИ включает в себя такие области разработки, как речевые
           технологии и обработка естественного языка, компьтерное зрение,
@@ -102,7 +105,7 @@ const AI: React.FC<IProps> = () => {
           ))}
         </TechnologiesList>
       </Root>
-    </BackgroundWrapper>
+    </WithBg>
   );
 };
 export default AI;

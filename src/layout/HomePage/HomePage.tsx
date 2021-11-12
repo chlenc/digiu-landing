@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import Statistics from "./Statistics";
 import Layout from "../../components/Layout";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -76,16 +77,11 @@ const Subtitle = styled.h2`
 `;
 
 const HomePage: React.FC<IProps> = () => {
+  const locale = useLang();
   return (
     <Root>
-      <Title>
-        Экосистема разработки и финансирования проектов в области искусственного
-        интеллекта и блокчейн технологий
-      </Title>
-      <Subtitle>
-        Основным выгодоприобретателем от развития высоких технологий должен быть
-        обычный человек.
-      </Subtitle>
+      <Title>{locale.head.title}</Title>
+      <Subtitle>{locale.head.subtitle}</Subtitle>
       <Button>Скачать концепцию</Button>
       <Statistics
         items={[

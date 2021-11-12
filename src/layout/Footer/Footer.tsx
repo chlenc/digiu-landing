@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import BackgroundWrapper from "@components/BackgroundWrapper";
+import WithBg from "@components/Background";
 import Layout from "@components/Layout";
 
 interface IProps {}
@@ -79,6 +79,19 @@ const Navigation = styled.div`
   }
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @media (min-width: 1280px) {
+    flex-direction: row;
+  }
+`;
+
+const MainInfo = styled.div`
+  max-width: 500px;
+`;
+
 const SecondaryInfo = styled.div`
   font-family: Montserrat;
   font-style: normal;
@@ -117,9 +130,16 @@ const Links = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: flex-start;
-  padding: 64px 0;
   gap: 10px;
-  max-width: 300px;
+  padding: 64px 0;
+  @media (min-width: 480px) {
+    max-width: 300px;
+    text-align: start;
+  }
+  @media (min-width: 1280px) {
+    gap: 32px;
+    padding: 0;
+  }
 `;
 const SocialIcon = styled.img`
   max-width: 32px;
@@ -129,35 +149,39 @@ const SocialIcon = styled.img`
 
 const Footer: React.FC<IProps> = () => {
   return (
-    <BackgroundWrapper background="/images/laboratory/bg.png" position="bottom">
+    <WithBg background="/images/bg3.jpg" position="bottom">
       <Root>
-        <Top>
-          <Logo src="/images/head/logo.png" alt="logo" />
-          <SmallText>
-            Разработка и финансирование проектов в области искусственного
-            интеллекта и блок-чейн технологий
-          </SmallText>
-          <div></div>
-        </Top>
-        <Navigation>
+        <Wrapper>
           <div>
-            <div className="nav">Экосистема DigiU</div>
-            <div className="nav">Венчурный фонд</div>
+            <Top>
+              <Logo src="/images/head/logo.png" alt="logo" />
+              <SmallText>
+                Разработка и финансирование проектов в области искусственного
+                интеллекта и блок-чейн технологий
+              </SmallText>
+            </Top>
+            <Navigation>
+              <div>
+                <div className="nav">Главная</div>
+                <div className="nav">Новости</div>
+                <div className="nav">Экосистема DigiU</div>
+                <div className="nav">Блокчейн лаборотория</div>
+              </div>
+              <div>
+                <div className="nav">Управление активами</div>
+                <div className="nav">Разработки ИИ</div>
+                <div className="nav">Венчурный фонд</div>
+              </div>
+            </Navigation>
           </div>
-          <div>
-            <div className="nav">
-              Лаборатория искусственного интеллекта DigiU
-            </div>
-            <div className="nav">DigiU.Lab</div>
-          </div>
-        </Navigation>
-        <Links>
-          <SocialIcon src="/images/footer/facebook.svg" alt="facebook" />
-          <SocialIcon src="/images/footer/instagram.svg" alt="instagram" />
-          <SocialIcon src="/images/footer/youtube.svg" alt="youtube" />
-          <SocialIcon src="/images/footer/telegram.svg" alt="telegram" />
-          <SocialIcon src="/images/footer/vk.svg" alt="vk" />
-        </Links>
+          <Links>
+            <SocialIcon src="/images/footer/facebook.svg" alt="facebook" />
+            <SocialIcon src="/images/footer/instagram.svg" alt="instagram" />
+            <SocialIcon src="/images/footer/youtube.svg" alt="youtube" />
+            <SocialIcon src="/images/footer/telegram.svg" alt="telegram" />
+            <SocialIcon src="/images/footer/vk.svg" alt="vk" />
+          </Links>
+        </Wrapper>
         <SecondaryInfo>
           <Text>
             АНО “ЦифровойТЫ” ОГРН 1195476086740 ИНН 5405050584 630102,
@@ -171,7 +195,7 @@ const Footer: React.FC<IProps> = () => {
           </div>
         </SecondaryInfo>
       </Root>
-    </BackgroundWrapper>
+    </WithBg>
   );
 };
 export default Footer;
