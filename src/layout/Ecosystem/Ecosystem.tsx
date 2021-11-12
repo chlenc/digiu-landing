@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import Layout from "../../components/Layout";
 import EcosystemItem from "./EcosystemItem";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -50,44 +51,41 @@ const EcosystemList = styled.div`
 `;
 
 const Ecosystem: React.FC<IProps> = () => {
+  const { ecosystem: l } = useLang();
   return (
     <Root>
-      <PageTitle>Экосистема DigiU</PageTitle>
+      <PageTitle>{l.title}</PageTitle>
       <EcosystemList>
         {[
           {
             photo: "/images/ecosystem/blockchain.svg",
-            title: "Блокчейн лаборатория",
-            description:
-              "Разработка проектов \nв области блок-чейн технологий.",
+            title: l.itemTitle1,
+            description: l.itemText1,
           },
           {
             photo: "/images/ecosystem/statistics.svg",
-            title: "Управление активами",
-            description: "Доверительное управление \nкриптоактивами",
+            title: l.itemTitle2,
+            description: l.itemText2,
           },
           {
             photo: "/images/ecosystem/ai.svg",
-            title: "Лаборатория ИИ",
-            description:
-              "Разработка проектов \nв области искуственного интеллекта.",
+            title: l.itemTitle3,
+            description: l.itemText3,
           },
           {
             photo: "/images/ecosystem/leaves.svg",
-            title: "Венчурный фонд",
-            description:
-              "Инвестиции в технологии \nи проекты в области ИИ \nи блок-чейна.",
+            title: l.itemTitle4,
+            description: l.itemText4,
           },
           {
             photo: "/images/ecosystem/group.svg",
-            title: "Международное сообщество \nинвесторов",
-            description: "Финансирование и информационное\nпродвижение проекта",
+            title: l.itemTitle5,
+            description: l.itemText5,
           },
           {
             photo: "/images/ecosystem/education.svg",
-            title: "Образовательная платформа",
-            description:
-              "Онлайн образование в сфере \nвенчурного инвестирования, \nDeFi, блокчейн и криптовалют",
+            title: l.itemTitle6,
+            description: l.itemText6,
           },
         ].map((item) => (
           <EcosystemItem key={item.description} item={item} />

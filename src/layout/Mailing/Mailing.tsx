@@ -4,6 +4,7 @@ import Layout from "../../components/Layout";
 import BackgroundWrapper from "@components/BackgroundWrapper";
 import Button from "@components/Button";
 import Input from "@components/Input";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -67,17 +68,15 @@ const Form = styled.div`
   }
 `;
 const Mailing: React.FC<IProps> = () => {
+  const { subscribe } = useLang();
   return (
     <BackgroundWrapper background="#f3f9ff" isColor>
       <Root>
-        <Title>Получайте новости первым!</Title>
-        <Subtitle color="#091131">
-          Подпишитесь на нашу рассылку, чтобы узнать больше о новых инвестициях,
-          а так же секреты успешных стартапов и венчурных фондов.
-        </Subtitle>
+        <Title>{subscribe.title}</Title>
+        <Subtitle color="#091131">{subscribe.subtitle}</Subtitle>
         <Form>
           <Input placeholder="E-mail" />
-          <Button blue>Подписаться</Button>
+          <Button blue>{subscribe.button}</Button>
         </Form>
       </Root>
     </BackgroundWrapper>

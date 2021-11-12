@@ -77,21 +77,18 @@ const Subtitle = styled.h2`
 `;
 
 const HomePage: React.FC<IProps> = () => {
-  const locale = useLang();
+  const l = useLang();
   return (
     <Root>
-      <Title>{locale.head.title}</Title>
-      <Subtitle>{locale.head.subtitle}</Subtitle>
-      <Button>Скачать концепцию</Button>
+      <Title>{l.head.title}</Title>
+      <Subtitle>{l.head.subtitle}</Subtitle>
+      <Button>{l.head.downloadConcept}</Button>
       <Statistics
         items={[
-          { title: "10 147", subtitle: "Активных \nучастников экосистемы" },
-          {
-            title: "70 000",
-            subtitle: "Численность комьюнити\nпо итогам 2021 года",
-          },
-          { title: "182", subtitle: "Стран, состоящих \nв экосистеме DigiU" },
-          { title: "28", subtitle: "Количество проектов\nв портфеле" },
+          { title: l.head.itemTitle1, subtitle: l.head.itemText1 },
+          { title: l.head.itemTitle2, subtitle: l.head.itemText2 },
+          { title: l.head.itemTitle3, subtitle: l.head.itemText3 },
+          { title: l.head.itemTitle4, subtitle: l.head.itemText4 },
         ]}
       />
     </Root>

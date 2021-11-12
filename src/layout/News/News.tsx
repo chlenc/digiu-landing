@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import NewsItem from "./NewsItem";
 import Layout from "../../components/Layout";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -79,31 +80,30 @@ const NewsList = styled.div`
 `;
 
 const News: React.FC<IProps> = () => {
+  const { news } = useLang();
+
   return (
     <Root>
-      <PageTitle>Новости</PageTitle>
+      <PageTitle>{news.title}</PageTitle>
       <NewsList>
         {[
           {
             photo: "/images/news/news1.png",
-            date: "21.07.2021",
-            title: "Старт альфа-тестирования платформы EYWA",
-            description:
-              "8 сентября 2021 года мы запустили первую фазу альфа-тестирования платформы EYWA- первого потенциального единорога экосистемы",
+            date: news.newsDate1,
+            title: news.newsTitle1,
+            description: news.newsText1,
           },
           {
             photo: "/images/news/news2.png",
-            date: "21.07.2021",
-            title: "Добро пожаловать в офис DigiU!",
-            description:
-              "Готовы узнать, как проходит рабочий день DigiU? Кто отвечает за личный кабинет, создает ИИ-разработки DigiU, ищет самых лучших специалистов в команду по всему миру?",
+            date: news.newsDate2,
+            title: news.newsTitle2,
+            description: news.newsText2,
           },
           {
             photo: "/images/news/news3.png",
-            date: "21.07.2021",
-            title: "Внедрение ИИ разработок DigiU в сеть автосервисов",
-            description:
-              "Собственник Hunter-Сервис обратился к нам с просьбой оптимизировать процесс контроля деятельности сотрудников на одной из его автомоек.",
+            date: news.newsDate3,
+            title: news.newsTitle3,
+            description: news.newsText3,
           },
         ].map((item) => (
           <NewsItem key={item.description} item={item} />

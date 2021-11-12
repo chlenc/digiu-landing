@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import Layout from "../../components/Layout";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -96,11 +97,6 @@ const Img = styled.img`
   }
 `;
 
-const items = [
-  "Пассивный заработок  на рынке DeFi",
-  "Минимизация риска  за счет\n независимых аудитов смарт-контрактов",
-  "Доходность более 30%  годовых в USDT",
-];
 const Row = styled.div`
   display: flex;
   align-items: center;
@@ -128,21 +124,18 @@ const Row = styled.div`
   }
 `;
 const Management: React.FC<IProps> = () => {
+  const { assetManagement: l } = useLang();
   return (
     <Root>
-      <PageTitle>Управление активами</PageTitle>
-      <Subtitle color="#091131">
-        DigiU.Wealth - инвестиционный продукт экосистемы , приносящий
-        ежемесячную прибыль без риска просадки депозита в ETH, BTC, USDT с
-        октября 2020 года.
-      </Subtitle>
+      <PageTitle>{l.title}</PageTitle>
+      <Subtitle color="#091131">{l.subtitle}</Subtitle>
       <Container>
         <ImgContainer>
           <Img src="/images/management/microwave.png" alt="microwave" />
         </ImgContainer>
 
         <div>
-          {items.map((item) => (
+          {[l.item1, l.item2, l.item3].map((item) => (
             <Row key={item}>
               <img src="/done.svg" />
               <span>{item}</span>
