@@ -16,10 +16,6 @@ const Root = styled(Layout)`
     margin-bottom: 120px;
     margin-top: 120px;
   }
-  @media (min-width: 1280px) {
-    margin-bottom: 160px;
-    margin-top: 160px;
-  }
 `;
 
 const Title = styled.div`

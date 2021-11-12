@@ -20,7 +20,7 @@ const Root = styled(Layout)`
     padding-bottom: 120px;
   }
   @media (min-width: 1280px) {
-    padding-top: 160px;
+    padding-top: 120px;
     padding-bottom: 80px;
   }
 `;

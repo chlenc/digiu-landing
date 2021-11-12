@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import WithBg from "@components/Background";
 import Layout from "@components/Layout";
 import { useLang } from "@src/hooks/useLang";
+import SizedBox from "@components/SizedBox";
 
 interface IProps {}
 
@@ -72,6 +73,7 @@ const Navigation = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
+    display: block;
     margin-bottom: 16px;
     @media (min-width: 480px) {
       margin-bottom: 24px;
@@ -161,15 +163,29 @@ const Footer: React.FC<IProps> = () => {
             </Top>
             <Navigation>
               <div>
-                <div className="nav">{menu.home}</div>
-                <div className="nav">{menu.news}</div>
-                <div className="nav">{menu.ecosystem}</div>
-                <div className="nav">{menu.lab}</div>
+                <a href="#home" className="nav">
+                  {menu.home}
+                </a>
+                <a href="#news" className="nav">
+                  {menu.news}
+                </a>
+                <a href="#ecosystem" className="nav">
+                  {menu.ecosystem}
+                </a>
+                <a href="#lab" className="nav">
+                  {menu.lab}
+                </a>
               </div>
               <div>
-                <div className="nav">{menu.assetManagement}</div>
-                <div className="nav">{menu.ai}</div>
-                <div className="nav">{menu.venture}</div>
+                <a href="#assetManagement" className="nav">
+                  {menu.assetManagement}
+                </a>
+                <a href="#ai" className="nav">
+                  {menu.ai}
+                </a>
+                <a href="#venture" className="nav">
+                  {menu.venture}
+                </a>
               </div>
             </Navigation>
           </div>

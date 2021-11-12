@@ -24,7 +24,7 @@ const Root = styled(Layout)`
 
 const Title = styled.h1`
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   display: flex;
@@ -41,7 +41,6 @@ const Title = styled.h1`
   }
   @media (min-width: 1280px) {
     font-size: 48px;
-    font-weight: 400;
     line-height: 64px;
     text-align: left;
     max-width: 1170px;

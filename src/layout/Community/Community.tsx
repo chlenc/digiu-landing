@@ -19,10 +19,6 @@ const Root = styled(Layout)`
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  @media (min-width: 1280px) {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
 `;
 
 const Title = styled.div`
@@ -78,7 +74,7 @@ const SubscribeButton = styled(Button)`
 const Community: React.FC<IProps> = () => {
   const { community } = useLang();
   return (
-    <WithBg background="/images/head/bg.png" position="bottom">
+    <WithBg background="/images/community/bg4.png" position="bottom">
       <Root>
         <Title>{community.title}</Title>
         <Subtitle>{community.subtitle}</Subtitle>
