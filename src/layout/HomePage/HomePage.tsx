@@ -24,7 +24,7 @@ const Root = styled(Layout)`
 
 const Title = styled.h1`
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   display: flex;
@@ -52,7 +52,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   display: flex;
