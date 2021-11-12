@@ -49,7 +49,12 @@ const BecomeInvestor: React.FC<IProps> = () => {
     <BackgroundWrapper background="#F3F9FF" isColor>
       <Root>
         <Title>{becomeCoowner.title}</Title>
-        <Button blue onClick={() => (window.location.href = "google.com")}>
+        <Button
+          blue
+          onClick={() =>
+            (window.location.href = "https://lk.digiu.ai/auth/login")
+          }
+        >
           {becomeCoowner.button}
         </Button>
       </Root>

@@ -115,19 +115,19 @@ const Education: React.FC<IProps> = () => {
             title: education.itemTitle1,
             subtitle: education.itemText1,
             img: "/images/education/vc-big.png",
-            url: "",
+            url: "https://education.digiu.ai/course/view?id=1",
           },
           {
             title: education.itemTitle2,
             subtitle: education.itemText2,
             img: "/images/education/crypto-intro.png",
-            url: "",
+            url: "https://education.digiu.ai/course/view?id=1",
           },
           {
             title: education.itemTitle3,
             subtitle: education.itemText3,
             img: "/images/education/crypto-currency.png",
-            url: "",
+            url: "https://education.digiu.ai/course/view?id=1",
           },
         ].map((item) => (
           <VideoItem {...item} key={item.title} />
@@ -136,7 +136,14 @@ const Education: React.FC<IProps> = () => {
       <FreeVideo>
         <VideoCaption>
           <div className="text">{education.freeCource}</div>
-          <Button>{education.button}</Button>
+          <Button
+            onClick={() =>
+              (window.location.href =
+                "https://education.digiu.ai/course/view?id=1")
+            }
+          >
+            {education.button}
+          </Button>
         </VideoCaption>
 
         <div style={{ position: "relative" }}>
