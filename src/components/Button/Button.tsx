@@ -4,7 +4,7 @@ const Button = styled.button<{
   blue?: boolean;
 }>`
   background: ${({ blue }) => (blue ? "#316bff" : "#ffffff")};
-  // color: ${({ blue }) => (blue ? "#ffffff" : "#316bff")};
+  color: ${({ blue }) => (blue ? "#ffffff" : "#091131")};
   border-radius: 10px;
   height: 48px;
   max-width: 100%;
@@ -19,7 +19,6 @@ const Button = styled.button<{
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
-  color: #091131;
 
   @media (min-width: 480px) {
     height: 60px;
