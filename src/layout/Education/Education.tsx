@@ -4,7 +4,6 @@ import Layout from "../../components/Layout";
 import Subtitle from "@components/Subtitile";
 import VideoItem from "@layout/Education/VideoItem";
 import Button from "@components/Button";
-import WithBg from "@components/Background";
 import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
@@ -57,34 +56,19 @@ const TechnologiesList = styled.div`
 `;
 const FreeVideo = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  padding: 20px 59px;
+  padding: 80px 17px;
   width: 100%;
   margin-top: 20px;
   overflow: hidden;
+  margin: 80px 0;
   background: url("/images/head/bg.png") bottom no-repeat;
 
-  .text {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: left;
-    color: #ffffff;
-    margin-bottom: 30px;
-  }
-
   img {
-    margin: 20px 0;
     width: 100%;
-  }
-
-  @media (min-width: 480px) {
-    display: flex;
   }
 
   @media (min-width: 1280px) {
@@ -94,11 +78,44 @@ const FreeVideo = styled.div`
 `;
 
 const VideoCaption = styled.div`
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  @media (min-width: 1280px) {
+    align-items: flex-start;
+  }
+`;
+const Text = styled.div`
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 32px;
+  text-align: center;
+  @media (min-width: 480px) {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 1280px) {
+    text-align: start;
+    max-width: 500px;
+  }
 `;
 
-const SubscribeButton = styled(Button)`
-  width: 100%;
+const SmallBtn = styled(Button)`
+  @media (min-width: 1280px) {
+    display: none;
+  }
+`;
+const BigBtn = styled(Button)`
+  display: none;
+  @media (min-width: 1280px) {
+    display: inline;
+  }
 `;
 
 const Education: React.FC<IProps> = () => {
@@ -135,21 +152,30 @@ const Education: React.FC<IProps> = () => {
       </TechnologiesList>
       <FreeVideo>
         <VideoCaption>
-          <div className="text">{education.freeCource}</div>
-          <Button
+          <Text>{education.freeCource}</Text>
+          <BigBtn
             onClick={() =>
               (window.location.href =
                 "https://education.digiu.ai/course/view?id=1")
             }
           >
             {education.button}
-          </Button>
+          </BigBtn>
         </VideoCaption>
 
         <div style={{ position: "relative" }}>
           <img src="/images/education/vc-big.png" alt="venture-capital" />
           <PlayBtn />
         </div>
+        <SmallBtn
+          style={{ marginTop: 32 }}
+          onClick={() =>
+            (window.location.href =
+              "https://education.digiu.ai/course/view?id=1")
+          }
+        >
+          {education.button}
+        </SmallBtn>
       </FreeVideo>
     </Root>
   );

@@ -15,7 +15,6 @@ const Root = styled.div`
   background: #ffffff;
   border: 1px solid #e2e8ff;
   border-radius: 10px;
-  height: 288px;
   padding: 32px 24px;
 
   .icon {
@@ -49,7 +48,6 @@ const Root = styled.div`
   }
 
   @media (min-width: 480px) {
-    height: 346px;
     padding: 64px 12px;
     .icon {
       width: 64px;
@@ -69,19 +67,11 @@ const Root = styled.div`
   }
   @media (min-width: 1280px) {
     padding: 32px 24px;
-    height: 380px;
   }
-`;
-const Star = styled.img`
-  position: absolute;
-  top: 20px;
-  right: 20px;
 `;
 const TechnologyItem: React.FC<IProps> = ({ title, subtitle, img }) => {
   return (
     <Root>
-      {/* <Star className="icon" src="images/ai/star.svg" alt={title} />
-       */}
       <img src={img} />
       <div className="title">{title}</div>
       <div className="subtitle">{subtitle}</div>

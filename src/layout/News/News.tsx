@@ -13,6 +13,7 @@ const Root = styled(Layout)`
   align-items: center;
   padding-top: 80px;
   background: #fff;
+  overflow: scroll;
   @media (min-width: 480px) {
     padding-top: 120px;
   }

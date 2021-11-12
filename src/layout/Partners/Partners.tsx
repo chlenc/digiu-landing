@@ -40,15 +40,18 @@ const Title = styled.div`
 `;
 const Images = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 32px;
 
   @media (min-width: 480px) {
+    gap: 64px;
+    width: 100%;
+  }
+
+  @media (min-width: 789px) {
     display: flex;
     grid-template-columns: none;
     justify-content: center;
-    gap: 64px;
-    width: 100%;
   }
 
   .hide {
