@@ -86,9 +86,9 @@ const TechnologiesList = styled.div`
 `;
 const AI: React.FC<IProps> = () => {
   return (
-    <BackgroundWrapper background="/images/ai/bg.png" position="bottom">
+    <BackgroundWrapper background="/images/head/bg.png" position="bottom">
       <Root>
-        <PageTitle>Разработки в области ИИ</PageTitle>
+        <PageTitle>Разработки в области Искусственного интеллекта</PageTitle>
         <Subtitle>
           Лаборатория ИИ включает в себя такие области разработки, как речевые
           технологии и обработка естественного языка, компьтерное зрение,

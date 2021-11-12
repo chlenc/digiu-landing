@@ -9,8 +9,7 @@ const Root = styled(Layout)`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 16px;
   background: #fff;
   @media (min-width: 480px) {
     padding-top: 120px;
@@ -28,8 +27,8 @@ const PageTitle = styled.div`
   font-size: 24px;
   line-height: 32px;
   color: #091131;
-  margin-bottom: 32px;
   width: 100%;
+  padding-right: 146px;
   @media (min-width: 480px) {
     font-size: 40px;
     line-height: 48px;
@@ -71,14 +70,11 @@ const ImgContainer = styled.div`
   position: relative;
   width: 264px;
   height: 312px;
-  margin-bottom: 32px;
-  margin-right: 34px;
-  @media (min-width: 980px) {
+  @media (min-width: 760px) {
     max-width: 640px;
     margin-right: 140px;
     width: 640px;
     height: 720px;
-    margin-bottom: 64px;
   }
   @media (min-width: 1280px) {
     margin-right: 0px;
@@ -91,8 +87,9 @@ const Img = styled.img`
   bottom: 0;
   position: absolute;
   width: 264px;
-  @media (min-width: 980px) {
+  @media (min-width: 760px) {
     width: 640px;
+    right: -10%;
   }
 `;
 
@@ -140,11 +137,10 @@ const Management: React.FC<IProps> = () => {
         <ImgContainer>
           <Img src="/images/management/microwave.png" alt="microwave" />
         </ImgContainer>
-
         <div>
           {items.map((item) => (
             <Row key={item}>
-              <img src="/radioBtn.svg" />
+              <img src="/check.svg" />
               <span>{item}</span>
             </Row>
           ))}
