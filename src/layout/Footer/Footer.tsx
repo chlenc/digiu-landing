@@ -174,11 +174,21 @@ const Footer: React.FC<IProps> = () => {
             </Navigation>
           </div>
           <Links>
-            <SocialIcon src="/images/footer/facebook.svg" alt="facebook" />
-            <SocialIcon src="/images/footer/instagram.svg" alt="instagram" />
-            <SocialIcon src="/images/footer/youtube.svg" alt="youtube" />
-            <SocialIcon src="/images/footer/telegram.svg" alt="telegram" />
-            <SocialIcon src="/images/footer/vk.svg" alt="vk" />
+            <a href="https://www.facebook.com/DigiU.official/">
+              <SocialIcon src="/images/footer/facebook.svg" alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/digiu.ai/">
+              <SocialIcon src="/images/footer/instagram.svg" alt="instagram" />
+            </a>
+            <a href="https://www.youtube.com/digiuai">
+              <SocialIcon src="/images/footer/youtube.svg" alt="youtube" />
+            </a>
+            <a href="https://t.me/digiu_ai">
+              <SocialIcon src="/images/footer/telegram.svg" alt="telegram" />
+            </a>
+            <a href="https://vk.com/digiugroup">
+              <SocialIcon src="/images/footer/vk.svg" alt="vk" />
+            </a>
           </Links>
         </Wrapper>
         <SecondaryInfo>

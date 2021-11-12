@@ -82,7 +82,14 @@ const HomePage: React.FC<IProps> = () => {
     <Root>
       <Title>{l.head.title}</Title>
       <Subtitle>{l.head.subtitle}</Subtitle>
-      <Button>{l.head.downloadConcept}</Button>
+      <Button
+        onClick={() =>
+          (window.location.href =
+            "https://drive.google.com/a/digiu.ai/uc?id=1U-p4jPWmWRawo8I_a6vokakZgUa_3GAh&export=download")
+        }
+      >
+        {l.head.downloadConcept}
+      </Button>
       <Statistics
         items={[
           { title: l.head.itemTitle1, subtitle: l.head.itemText1 },

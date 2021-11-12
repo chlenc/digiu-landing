@@ -16,6 +16,7 @@ const Root = styled.div`
   border: 1px solid #e2e8ff;
   border-radius: 10px;
   height: 288px;
+  padding: 32px 24px;
 
   .icon {
     width: 48px;
