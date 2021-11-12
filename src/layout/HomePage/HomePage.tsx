@@ -39,7 +39,8 @@ const Title = styled.h1`
     margin-top: 128px;
   }
   @media (min-width: 1280px) {
-    font-size: 44px;
+    font-size: 40px;
+    font-weight: 600;
     line-height: 64px;
     text-align: left;
     max-width: 1170px;
@@ -56,7 +57,7 @@ const Subtitle = styled.h2`
   display: flex;
   align-items: center;
   text-align: center;
-  color: #7098ff;
+  color: #9ab7ff;
   margin-top: 24px;
   margin-bottom: 24px;
   @media (min-width: 480px) {
@@ -87,13 +88,13 @@ const HomePage: React.FC<IProps> = () => {
       <Button>Скачать концепцию</Button>
       <Statistics
         items={[
-          { title: "9 598", subtitle: "Активных \nучастников экосистемы" },
+          { title: "10 147", subtitle: "Активных \nучастников экосистемы" },
           {
             title: "70 000",
             subtitle: "Численность комьюнити\nпо итогам 2021 года",
           },
-          { title: "9 598", subtitle: "Стран, состоящих \nв экосистеме DigiU" },
-          { title: "9 598", subtitle: "Количество проектов\nв портфеле" },
+          { title: "182", subtitle: "Стран, состоящих \nв экосистеме DigiU" },
+          { title: "28", subtitle: "Количество проектов\nв портфеле" },
         ]}
       />
     </Root>

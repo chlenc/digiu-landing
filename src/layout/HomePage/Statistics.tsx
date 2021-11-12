@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { Column } from "../../components/Flex";
 
 export type TStatisticsItem = {
   title: string | number;
@@ -38,6 +37,8 @@ const Title = styled.div`
   color: #ffffff;
   @media (min-width: 1280px) {
     text-align: left;
+    font-size: 40px;
+    font-weight: 400;
   }
 `;
 const Subtitle = styled.div`
