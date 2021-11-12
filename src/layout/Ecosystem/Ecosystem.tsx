@@ -53,7 +53,7 @@ const EcosystemList = styled.div`
 const Ecosystem: React.FC<IProps> = () => {
   const { ecosystem: l } = useLang();
   return (
-    <Root>
+    <Root id="ecosystem">
       <PageTitle>{l.title}</PageTitle>
       <EcosystemList>
         {[

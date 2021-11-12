@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const Layout = styled.div`
+const Layout = styled.section`
   padding: 0 16px;
   @media (min-width: 480px) {
     padding: 0 24px;

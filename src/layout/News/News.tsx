@@ -92,7 +92,7 @@ const News: React.FC<IProps> = () => {
   const { news } = useLang();
 
   return (
-    <Root>
+    <Root id="news">
       <PageTitle>{news.title}</PageTitle>
       <NewsList>
         {[

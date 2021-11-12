@@ -79,7 +79,7 @@ const Subtitle = styled.h2`
 const HomePage: React.FC<IProps> = () => {
   const l = useLang();
   return (
-    <Root>
+    <Root id="home">
       <Title>{l.head.title}</Title>
       <Subtitle>{l.head.subtitle}</Subtitle>
       <Button

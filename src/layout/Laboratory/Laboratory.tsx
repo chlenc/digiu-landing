@@ -75,7 +75,7 @@ const Laboratory: React.FC<IProps> = () => {
   const { lab } = useLang();
   return (
     <BackgroundWrapper background="/images/laboratory/bg.png" position="bottom">
-      <Root>
+      <Root id="lab">
         <PageTitle>{lab.title}</PageTitle>
         <Subtitle>{lab.subtitle}</Subtitle>
         <AdvantagesGrid>

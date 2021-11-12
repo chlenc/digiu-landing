@@ -126,7 +126,7 @@ const Row = styled.div`
 const Management: React.FC<IProps> = () => {
   const { assetManagement: l } = useLang();
   return (
-    <Root>
+    <Root id="assetManagement">
       <PageTitle>{l.title}</PageTitle>
       <Subtitle color="#091131">{l.subtitle}</Subtitle>
       <Container>

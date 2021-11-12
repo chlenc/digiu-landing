@@ -131,7 +131,6 @@ const Row = styled.div`
       line-height: 28px;
     }
     @media (min-width: 1280px) {
-      margin-bottom: 20px;
       max-width: 428px;
     }
   }
@@ -156,7 +155,7 @@ const Row = styled.div`
 const Venture: React.FC<IProps> = () => {
   const { venture } = useLang();
   return (
-    <Root>
+    <Root id="venture">
       <Title>{venture.title}</Title>
       <Subtitle>{venture.subtitle}</Subtitle>
       <Container>

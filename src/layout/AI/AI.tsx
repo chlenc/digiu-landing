@@ -71,7 +71,7 @@ const AI: React.FC<IProps> = () => {
   const { ai } = useLang();
   return (
     <WithBg background="/images/head/bg.png" position="center top">
-      <Root>
+      <Root id="ai">
         <PageTitle>{ai.title}</PageTitle>
         <Subtitle>{ai.subtitle}</Subtitle>
         <TechnologiesList>
