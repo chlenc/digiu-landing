@@ -14,6 +14,11 @@ const Root = styled(Layout)`
   padding-top: 80px;
   background: #fff;
   overflow: scroll;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  ::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
   @media (min-width: 480px) {
     padding-top: 120px;
   }
