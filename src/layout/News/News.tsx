@@ -76,7 +76,7 @@ const NewsList = styled.div`
 
     & > * {
       margin-bottom: 0;
-      margin-right: 32px;
+      margin-right: 30px;
     }
 
     & > :last-of-type {
