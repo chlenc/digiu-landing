@@ -52,7 +52,8 @@ const Subtitle = styled.div`
     line-height: 32px;
   }
   @media (min-width: 1280px) {
-    margin-bottom: 96px;
+    margin-bottom: 80px;
+    max-width: 1048px;
   }
 `;
 
@@ -73,7 +74,7 @@ const Laboratory: React.FC<IProps> = () => {
   return (
     <BackgroundWrapper background="/images/laboratory/bg.png" position="bottom">
       <Root>
-        <PageTitle>Экосистема DigiU</PageTitle>
+        <PageTitle>Блокчейн лаборатория</PageTitle>
         <Subtitle>
           Разработкой блокчейн проектов занимается подразделение DigiU.Lab
           Области деятельности подразделения лежат в исследовании блокчейна ,
@@ -92,7 +93,7 @@ const Laboratory: React.FC<IProps> = () => {
               icon: "/images/laboratory/eywa.svg",
             },
             {
-              text: "В проекты инвестируют международные \nвенчурные фонды ",
+              text: "В проекты лаборатории \nинвестируют международные венчурные фонды ",
               icon: "/images/laboratory/investment.svg",
             },
           ].map((item) => (

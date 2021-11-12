@@ -15,9 +15,6 @@ const Root = styled(Layout)`
   @media (min-width: 480px) {
     padding-top: 120px;
   }
-  @media (min-width: 1280px) {
-    padding-top: 160px;
-  }
 `;
 
 const PageTitle = styled.div`

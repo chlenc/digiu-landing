@@ -37,6 +37,10 @@ const Date = styled.div`
   line-height: 16px;
   color: #989cb1;
   margin-bottom: 12px;
+  @media (min-width: 480px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 `;
 
 const Title = styled.div`
@@ -49,6 +53,13 @@ const Title = styled.div`
   align-items: center;
   color: #091131;
   margin-bottom: 12px;
+  @media (min-width: 480px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media (min-width: 1280px) {
+    font-weight: 600;
+  }
 `;
 
 const Description = styled.div`
@@ -58,6 +69,10 @@ const Description = styled.div`
   font-size: 12px;
   line-height: 20px;
   color: #989cb1;
+  @media (min-width: 480px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 
 const NewsItem: React.FC<IProps> = ({
@@ -67,7 +82,7 @@ const NewsItem: React.FC<IProps> = ({
     <Root>
       <Image src={photo} alt={title} />
       <Date>{date}</Date>
-      <Title>{date}</Title>
+      <Title>{title}</Title>
       <Description>{description}</Description>
     </Root>
   );

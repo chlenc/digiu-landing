@@ -28,7 +28,7 @@ const Root = styled.div`
   .title {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -40,7 +40,7 @@ const Root = styled.div`
     white-space: pre-wrap;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
@@ -48,7 +48,7 @@ const Root = styled.div`
   }
 
   @media (min-width: 480px) {
-    padding: 64px 12px;
+    padding: 104px 12px;
     .icon {
       width: 64px;
       height: 64px;

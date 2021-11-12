@@ -184,7 +184,7 @@ const Venture: React.FC<IProps> = () => {
         <div>
           {items.map((item) => (
             <Row key={item.title}>
-              <img src="/radioBtn.svg" />
+              <img src="/check.svg" />
               <Column>
                 <div className="title">{item.title}</div>
                 <div className="subtitle">{item.subtitle}</div>
