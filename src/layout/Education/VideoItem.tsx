@@ -87,7 +87,7 @@ const VideoItem: React.FC<IProps> = ({ title, subtitle, img, url }) => {
     <Root onClick={() => window.open(url, "_blank")}>
       <div style={{ position: "relative" }}>
         <Img src={img} alt="video" />
-        <Star className="icon" src="images/ai/star.svg" alt={title} />
+        {/* <Star className="icon" src="images/ai/star.svg" alt={title} /> */}
       </div>
       <div className="title">{title}</div>
       <div className="subtitle">{subtitle}</div>

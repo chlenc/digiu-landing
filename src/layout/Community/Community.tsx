@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import Layout from "../../components/Layout";
-import BackgroundWrapper from "@components/BackgroundWrapper";
+import WithBg from "@components/Background";
 import Button from "@components/Button";
 
 interface IProps {}
@@ -70,9 +70,13 @@ const AdvantagesGrid = styled.div`
   }
 `;
 
+const SubscribeButton = styled(Button)`
+  color: #091131;
+`;
+
 const Community: React.FC<IProps> = () => {
   return (
-    <BackgroundWrapper background="/images/laboratory/bg.png" position="bottom">
+    <WithBg background="/images/bg3.jpg" position="bottom">
       <Root>
         <Title>Международное сообщество инвесторов DigiU.Partners</Title>
         <Subtitle>
@@ -82,9 +86,9 @@ const Community: React.FC<IProps> = () => {
           информационным продвижением проекта. Каждый партнер компании получает
           быструю обратную связь, ответы на интересующие вопросы, поддержку.
         </Subtitle>
-        <Button>Получить консультацию</Button>
+        <SubscribeButton>Получить консультацию</SubscribeButton>
       </Root>
-    </BackgroundWrapper>
+    </WithBg>
   );
 };
 export default Community;

@@ -25,7 +25,6 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 100vw;
   position: relative;
 `;
 
@@ -52,7 +51,7 @@ const Home: NextPage = () => {
         <BecomeInvestor />
         <Partners />
         <Community />
-        {/*<Education />*/}
+        <Education />
         <Mailing />
         <Footer />
       </Main>

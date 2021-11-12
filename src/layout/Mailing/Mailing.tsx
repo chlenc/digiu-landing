@@ -60,6 +60,10 @@ const Form = styled.div`
   @media (min-width: 1280px) {
     flex-direction: row;
     align-items: center;
+
+    Input {
+      margin-right: 18px;
+    }
   }
 `;
 const Mailing: React.FC<IProps> = () => {

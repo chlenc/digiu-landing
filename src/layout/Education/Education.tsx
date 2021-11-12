@@ -3,8 +3,8 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Subtitle from "@components/Subtitile";
 import VideoItem from "@layout/Education/VideoItem";
-import bg from "../../../public/images/education/bg.png";
 import Button from "@components/Button";
+import WithBg from "@components/Background";
 
 interface IProps {}
 
@@ -45,7 +45,7 @@ const cards = [
   {
     title: "Курс “Как стать венчурным инвестором” ",
     subtitle: "Бесплатный курс для новичков в мире венчурных инвестиций ",
-    img: "/images/education/venture-capital.png",
+    img: "/images/education/vc-big.png",
     url: "",
   },
   {
@@ -78,14 +78,16 @@ const TechnologiesList = styled.div`
   }
 `;
 const FreeVideo = styled.div`
-  display: none;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding: 64px 59px;
+  padding: 20px 59px;
   width: 100%;
-  margin-top: 120px;
-  background: url("/images/laboratory/bg.png") bottom no-repeat;
+  margin-top: 20px;
+  overflow: hidden;
+  background: url("/images/bg3.jpg") bottom no-repeat;
 
   .text {
     font-family: Montserrat;
@@ -93,18 +95,34 @@ const FreeVideo = styled.div`
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
+    margin-bottom: 30px;
   }
 
   img {
-    margin: 40px 0;
+    margin: 20px 0;
+    width: 100%;
   }
 
   @media (min-width: 480px) {
     display: flex;
   }
+
+  @media (min-width: 1280px) {
+    margin-top: 120px;
+    flex-direction: row;
+  }
 `;
+
+const VideoCaption = styled.div`
+  max-width: 500px;
+`;
+
+const SubscribeButton = styled(Button)`
+  width: 100%;
+`;
+
 const Education: React.FC<IProps> = () => {
   return (
     <Root>
@@ -119,21 +137,20 @@ const Education: React.FC<IProps> = () => {
           <VideoItem {...item} key={item.title} />
         ))}
       </TechnologiesList>
-      {/*<FreeVideo>*/}
-      {/*  <div className="text">*/}
-      {/*    Бесплатный курс:*/}
-      {/*    <br /> Как стать венчурным инвестором?*/}
-      {/*  </div>*/}
+      <FreeVideo>
+        <VideoCaption>
+          <div className="text">
+            Бесплатный курс:
+            <br /> Как стать венчурным инвестором?
+          </div>
+          <Button>Получить доступ</Button>
+        </VideoCaption>
 
-      {/*  <div style={{ position: "relative" }}>*/}
-      {/*    <img*/}
-      {/*      src="/images/education/venture-capital.png"*/}
-      {/*      alt="venture-capital"*/}
-      {/*    />*/}
-      {/*    <PlayBtn />*/}
-      {/*  </div>*/}
-      {/*  <Button>Получить доступ</Button>*/}
-      {/*</FreeVideo>*/}
+        <div style={{ position: "relative" }}>
+          <img src="/images/education/vc-big.png" alt="venture-capital" />
+          <PlayBtn />
+        </div>
+      </FreeVideo>
     </Root>
   );
 };

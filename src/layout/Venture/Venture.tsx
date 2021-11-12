@@ -128,7 +128,7 @@ const Row = styled.div`
   img {
     width: 20px;
     height: 20px;
-    margin-right: 12px;
+    margin-right: 22px;
     @media (min-width: 480px) {
       width: 28px;
       height: 28px;
@@ -184,7 +184,7 @@ const Venture: React.FC<IProps> = () => {
         <div>
           {items.map((item) => (
             <Row key={item.title}>
-              <img src="/radioBtn.svg" />
+              <img src="/done.svg" />
               <Column>
                 <div className="title">{item.title}</div>
                 <div className="subtitle">{item.subtitle}</div>

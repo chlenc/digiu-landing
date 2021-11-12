@@ -4,13 +4,13 @@ import React from "react";
 interface IProps {
   title: string;
   subtitle: string;
+  img: string;
 }
 
 const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
   background: #ffffff;
   border: 1px solid #e2e8ff;
@@ -21,6 +21,10 @@ const Root = styled.div`
     width: 48px;
     height: 48px;
     margin-bottom: 32px;
+  }
+
+  img {
+    margin-bottom: 16px;
   }
 
   .title {
@@ -63,7 +67,7 @@ const Root = styled.div`
     }
   }
   @media (min-width: 1280px) {
-    padding: 107px 24px;
+    padding: 32px 24px;
     height: 380px;
   }
 `;
@@ -72,10 +76,12 @@ const Star = styled.img`
   top: 20px;
   right: 20px;
 `;
-const TechnologyItem: React.FC<IProps> = ({ title, subtitle }) => {
+const TechnologyItem: React.FC<IProps> = ({ title, subtitle, img }) => {
   return (
     <Root>
-      <Star className="icon" src="images/ai/star.svg" alt={title} />
+      {/* <Star className="icon" src="images/ai/star.svg" alt={title} />
+       */}
+      <img src={img} />
       <div className="title">{title}</div>
       <div className="subtitle">{subtitle}</div>
     </Root>

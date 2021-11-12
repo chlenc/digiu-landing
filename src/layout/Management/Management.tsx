@@ -144,7 +144,7 @@ const Management: React.FC<IProps> = () => {
         <div>
           {items.map((item) => (
             <Row key={item}>
-              <img src="/radioBtn.svg" />
+              <img src="/done.svg" />
               <span>{item}</span>
             </Row>
           ))}
