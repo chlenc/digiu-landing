@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import Layout from "../../components/Layout";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -87,16 +88,15 @@ const Images = styled.div`
 `;
 
 const Partners: React.FC<IProps> = () => {
+  const { partners } = useLang();
   return (
     <Root>
-      <Title>Партнеры экосистемы</Title>
+      <Title>{partners.title}</Title>
       <Images>
         <img src="/images/partners/1.png" alt="partner" />
         <img src="/images/partners/2.png" alt="partner" />
         <img src="/images/partners/3.png" alt="partner" />
         <img src="/images/partners/4.png" alt="partner" />
-        {/* <img src="/images/partners/5.png" className="hide" alt="partner" />
-        <img src="/images/partners/6.png" className="hide" alt="partner" /> */}
       </Images>
     </Root>
   );

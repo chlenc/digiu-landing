@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import BackgroundWrapper from "@components/BackgroundWrapper";
 import AdvantageItem from "@layout/Laboratory/AdvantageItem";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -71,31 +72,17 @@ const AdvantagesGrid = styled.div`
 `;
 
 const Laboratory: React.FC<IProps> = () => {
+  const { lab } = useLang();
   return (
     <BackgroundWrapper background="/images/laboratory/bg.png" position="bottom">
       <Root>
-        <PageTitle>Блокчейн лаборатория</PageTitle>
-        <Subtitle>
-          Разработкой блокчейн проектов занимается подразделение DigiU.Lab
-          Области деятельности подразделения лежат в исследовании блокчейна ,
-          создании собственной DeFi экостистемы, разработки продуктов. Основным
-          проектом блокчейн лаборатории является Eywa.Finance - кроссчейн
-          протокол передачи данных и ликвидности.
-        </Subtitle>
+        <PageTitle>{lab.title}</PageTitle>
+        <Subtitle>{lab.subtitle}</Subtitle>
         <AdvantagesGrid>
           {[
-            {
-              text: "Участник и призер \nмеждународных Хакатонов",
-              icon: "/images/laboratory/medal.svg",
-            },
-            {
-              text: "Eywa.Finance - первый продукт на \nстадии альфа-тестирования",
-              icon: "/images/laboratory/eywa.svg",
-            },
-            {
-              text: "В проекты лаборатории \nинвестируют международные венчурные фонды ",
-              icon: "/images/laboratory/investment.svg",
-            },
+            { text: lab.item1, icon: "/images/laboratory/medal.svg" },
+            { text: lab.item2, icon: "/images/laboratory/eywa.svg" },
+            { text: lab.item3, icon: "/images/laboratory/investment.svg" },
           ].map((item) => (
             <AdvantageItem key={item.text} {...item} />
           ))}

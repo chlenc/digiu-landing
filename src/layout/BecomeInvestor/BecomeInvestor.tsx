@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Button from "@components/Button";
 import BackgroundWrapper from "@components/BackgroundWrapper";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -43,14 +44,13 @@ const Title = styled.div`
 `;
 
 const BecomeInvestor: React.FC<IProps> = () => {
+  const { becomeCoowner } = useLang();
   return (
     <BackgroundWrapper background="#F3F9FF" isColor>
       <Root>
-        <Title>
-          Станьте совладельцем сотен стартапов в области блокчейн и ИИ
-        </Title>
+        <Title>{becomeCoowner.title}</Title>
         <Button blue onClick={() => (window.location.href = "google.com")}>
-          Стать инвестором DigiU
+          {becomeCoowner.button}
         </Button>
       </Root>
     </BackgroundWrapper>

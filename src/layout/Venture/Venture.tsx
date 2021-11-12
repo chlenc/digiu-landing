@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Column } from "@src/components/Flex";
 import React from "react";
 import Layout from "../../components/Layout";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -98,21 +99,6 @@ const Img = styled.img`
   }
 `;
 
-const items = [
-  {
-    title: "Эдвайзерство и акселерация",
-    subtitle: "Технологическая и продуктовая  экспертиза",
-  },
-  {
-    title: "Финансирование",
-    subtitle: "Предоставляем бизнес-ангельские инвестиции",
-  },
-  {
-    title: "Фандрайзинг",
-    subtitle: "Помощь в привлечении дополнительных\n источников финансирования",
-  },
-  { title: "Маркетинг", subtitle: "Рекламно-информационная поддержка" },
-];
 const Row = styled.div`
   display: flex;
   font-family: Montserrat;
@@ -168,21 +154,22 @@ const Row = styled.div`
   }
 `;
 const Venture: React.FC<IProps> = () => {
+  const { venture } = useLang();
   return (
     <Root>
-      <Title>Международный венчурный фонд для IT-Стартапов</Title>
-      <Subtitle>
-        DigiU сопровождает IT-стартапы на всех этапах роста, помогает не только
-        в развитии продукта, стратегии вывода продукта на рынок и продаж, но
-        также в выходе на стратегических партнеров и привлечении инвесторов на
-        следующих раундах.
-      </Subtitle>
+      <Title>{venture.title}</Title>
+      <Subtitle>{venture.subtitle}</Subtitle>
       <Container>
         <ImgContainer>
           <Img src="/images/venture/spots.png" alt="img" />
         </ImgContainer>
         <div>
-          {items.map((item) => (
+          {[
+            { title: venture.itemTitle1, subtitle: venture.itemText1 },
+            { title: venture.itemTitle2, subtitle: venture.itemText2 },
+            { title: venture.itemTitle3, subtitle: venture.itemText3 },
+            { title: venture.itemTitle4, subtitle: venture.itemText4 },
+          ].map((item) => (
             <Row key={item.title}>
               <img src="/done.svg" />
               <Column>

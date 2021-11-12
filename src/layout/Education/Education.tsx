@@ -5,6 +5,7 @@ import Subtitle from "@components/Subtitile";
 import VideoItem from "@layout/Education/VideoItem";
 import Button from "@components/Button";
 import WithBg from "@components/Background";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -41,29 +42,6 @@ const Title = styled.div`
   }
 `;
 
-const cards = [
-  {
-    title: "Курс “Как стать венчурным инвестором” ",
-    subtitle: "Бесплатный курс для новичков в мире венчурных инвестиций ",
-    img: "/images/education/vc-big.png",
-    url: "",
-  },
-  {
-    title: "Курс “Введение в криптовалюту”",
-    subtitle:
-      "Бесплатный вводный  курс для тех, кто хочет начать зарабатывать на криптовалютном рынке",
-    img: "/images/education/crypto-intro.png",
-    url: "",
-  },
-  {
-    title: "Курс “Криптовалюты 2.0 DeFi”",
-    subtitle:
-      "Получите практические навыки заработка на крипторынке всего за 8 уроков .",
-    img: "/images/education/crypto-currency.png",
-    url: "",
-  },
-];
-
 const TechnologiesList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -87,7 +65,7 @@ const FreeVideo = styled.div`
   width: 100%;
   margin-top: 20px;
   overflow: hidden;
-  background: url("/images/bg3.jpg") bottom no-repeat;
+  background: url("/images/head/bg.png") bottom no-repeat;
 
   .text {
     font-family: Montserrat;
@@ -124,26 +102,41 @@ const SubscribeButton = styled(Button)`
 `;
 
 const Education: React.FC<IProps> = () => {
+  const { education } = useLang();
   return (
     <Root>
-      <Title>Образовательные программы</Title>
+      <Title>{education.title}</Title>
       <Subtitle color="#989CB1" textAlign="center">
-        Образовательная платформа DigiU.Education предоставляет возможность всем
-        желающим получать платное и бесплатное образование в сфере финансов,
-        инвестиций, DeFi.
+        {education.subtitle}
       </Subtitle>
       <TechnologiesList>
-        {cards.map((item) => (
+        {[
+          {
+            title: education.itemTitle1,
+            subtitle: education.itemText1,
+            img: "/images/education/vc-big.png",
+            url: "",
+          },
+          {
+            title: education.itemTitle2,
+            subtitle: education.itemText2,
+            img: "/images/education/crypto-intro.png",
+            url: "",
+          },
+          {
+            title: education.itemTitle3,
+            subtitle: education.itemText3,
+            img: "/images/education/crypto-currency.png",
+            url: "",
+          },
+        ].map((item) => (
           <VideoItem {...item} key={item.title} />
         ))}
       </TechnologiesList>
       <FreeVideo>
         <VideoCaption>
-          <div className="text">
-            Бесплатный курс:
-            <br /> Как стать венчурным инвестором?
-          </div>
-          <Button>Получить доступ</Button>
+          <div className="text">{education.freeCource}</div>
+          <Button>{education.button}</Button>
         </VideoCaption>
 
         <div style={{ position: "relative" }}>

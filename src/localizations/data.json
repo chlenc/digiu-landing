@@ -7,7 +7,7 @@
             "lab": "Блокчейн лаборатория",
             "assetManagement": "УПРАВЛЕНИЕ АКТИВАМИ",
             "ai": "Разработки ИИ",
-            "venture ": "венчурный фонд",
+            "venture": "венчурный фонд",
             "about": "О компании",
             "projects": "Проекты",
             "forInvestors": "Инвесторам",
@@ -20,13 +20,14 @@
             "title": "Экосистема разработки и финансирования проектов в области искусственного\n интеллекта и блокчейн технологий",
             "subtitle": "Основным выгодоприобретателем от развития высоких технологий\n должен быть обычный человек.",
             "downloadConcept": "Скачать концепцию",
-            "advantageTitle1": "10 147",
-            "advantageSubtitle2": "Активных\n участников экосистемы",
-            "advantageTitle2": "70 000",
-            "advantageSubtitle3": "Стран, состоящих\n в экосистеме DigiU",
-            "advantageTitle3": "182",
-            "advantageTitle4": "28",
-            "advantageSubtitle4": "Количество проектов\n в портфеле"
+            "itemTitle1": "10 147",
+            "itemText1": "Активных\n участников экосистемы",
+            "itemTitle2": "70 000",
+            "itemText2": "Численность комьюнити\n по итогам 2021 года",
+            "itemTitle3": "182",
+            "itemText3": "Стран, состоящих\n в экосистеме DigiU",
+            "itemTitle4": "28",
+            "itemText4": "Количество проектов\n в портфеле"
         },
         "news": {
             "title": "Новости",
@@ -41,7 +42,7 @@
             "newsText3": "Собственник Hunter-Сервис обратился к нам с просьбой оптимизировать процесс контроля деятельности сотрудников на одной из его автомоек."
         },
         "ecosystem": {
-            "titile": "Экосистема DigiU",
+            "title": "Экосистема DigiU",
             "itemTitle1": "Блокчейн лаборатория",
             "itemText1": "Разработка проектов\n в области блок-чейн технологий.",
             "itemTitle2": "Управление активами",
@@ -113,7 +114,7 @@
             "itemText2": "Бесплатный вводный курс для\n тех, кто хочет начать зарабатывать\n на криптовалютном рынке",
             "itemTitle3": "Курс “Криптовалюты 2.0 DeFi”",
             "itemText3": "Получите практические навыки\n заработка на крипторынке\n всего за 8 уроков",
-            "freeСourse": "Получите доступ к бесплатному курсу:\n Как стать венчурным инвестором",
+            "freeCource": "Получите доступ к бесплатному курсу:\n Как стать венчурным инвестором",
             "button": "Получить доступ"
         },
         "subscribe": {
@@ -124,10 +125,12 @@
         "footer": {
             "title": "Разработка и финансирование проектов\n в области искусственного интеллекта и блок-чейн технологий",
             "ecosystem": "Экосистема DigiU",
-            "venture ": "Венчурный фонд",
+            "venture": "Венчурный фонд",
             "ai": "Лаборатория искусственного интеллекта DigiU",
             "lab": "DigiU.Lab",
-            "contacts": "АНО “ЦифровойТЫ” \n ОГРН 1195476086740 \n ИНН 5405050584 \n 630102, Новосибирск, ул. Кирова, 48, офис 701 \n Р/с 407038103000000712970 в АО “Тинькофф Банк”\n E-mail: info@digiu.ai \n Тел.: +7-383-258-13-99, +7-923-142-45-86"
+            "contacts": "АНО “ЦифровойТЫ” \n ОГРН 1195476086740 \n ИНН 5405050584 \n 630102, Новосибирск, ул. Кирова, 48, офис 701 \n Р/с 407038103000000712970 в АО “Тинькофф Банк”\n E-mail: info@digiu.ai \n Тел.: +7-383-258-13-99, +7-923-142-45-86",
+            "privacy": "Политика конфиденциальности",
+            "offer": "Публичная оферта"
         }
     },
     "EN": {
@@ -138,7 +141,7 @@
             "lab": "Blockchain lab",
             "assetManagement": "ASSET MANAGEMENT",
             "ai": "AI development",
-            "venture ": "venture fund",
+            "venture": "venture fund",
             "about": "About",
             "projects": "Projects",
             "forInvestors": "For investors",
@@ -151,13 +154,14 @@
             "title": "An ecosystem for the development and financing of artificial intelligence and blockchain technology projects",
             "subtitle": "The main beneficiary of high-tech development should be an ordinary man.",
             "downloadConcept": "Download the concept",
-            "advantageTitle1": "10 147",
-            "advantageSubtitle2": "Active participants in the ecosystem",
-            "advantageTitle2": "70 000",
-            "advantageSubtitle3": "Countries in the DigiU ecosystem",
-            "advantageTitle3": "182",
-            "advantageTitle4": "28",
-            "advantageSubtitle4": "Number of projects in the portfolio"
+            "itemTitle1": "10 147",
+            "itemText1": "Active participants in the ecosystem",
+            "itemTitle2": "70 000",
+            "itemText2": "Сommunity by 2021",
+            "itemTitle3": "182",
+            "itemText3": "Countries in the DigiU ecosystem",
+            "itemTitle4": "28",
+            "itemText4": "Number of projects in the portfolio"
         },
         "news": {
             "title": "News",
@@ -172,7 +176,7 @@
             "newsText3": "The owner of Hunter-Service approached us with a request to optimise the process of controlling employee activity at one of its car washes."
         },
         "ecosystem": {
-            "titile": "DigiU Ecosystem",
+            "title": "DigiU Ecosystem",
             "itemTitle1": "Blockchain lab",
             "itemText1": "Development of blockchain technology projects.",
             "itemTitle2": "Asset management",
@@ -244,7 +248,7 @@
             "itemText2": "Free introductory course for those who want to start earning on the cryptocurrency market",
             "itemTitle3": "Cryptocurrencies 2.0 DeFi Course",
             "itemText3": "Gain practical skills to make money in the crypto market in just 8 lessons",
-            "freeСourse": "Access the free course: How to become a venture capitalist",
+            "freeCource": "Access the free course: How to become a venture capitalist",
             "button": "Get access"
         },
         "subscribe": {
@@ -255,10 +259,12 @@
         "footer": {
             "title": "Development and financing of artificial intelligence and blockchain technologies",
             "ecosystem": "DigiU Ecosystem",
-            "venture ": "Venture fund",
+            "venture": "Venture fund",
             "ai": "DigiU Artificial Intelligence Lab",
             "lab": "DigiU.Lab",
-            "contacts": "ANO \"DIGITALYOU\" \n PSRN 1195476086740 \n Tax Payer Number 5405050584 \n office 701, 48 Kirova St., \n Novosibirsk, Russia \n 630102 \n current account 4070381030000712970 with Tinkoff Bank JSC\n E-mail: info@digiu.ai \n Tel.: +7-383-258-13-99, +7-923-142-45-86"
+            "contacts": "ANO \"DIGITALYOU\" \n PSRN 1195476086740 \n Tax Payer Number 5405050584 \n office 701, 48 Kirova St., \n Novosibirsk, Russia \n 630102 \n current account 4070381030000712970 with Tinkoff Bank JSC\n E-mail: info@digiu.ai \n Tel.: +7-383-258-13-99, +7-923-142-45-86",
+            "privacy": "Privacy Policy",
+            "offer": "Public offer"
         }
     },
     "FR": {
@@ -269,7 +275,7 @@
             "lab": "Blockchain lab",
             "assetManagement": "ASSET MANAGEMENT",
             "ai": "AI development",
-            "venture ": "venture fund",
+            "venture": "venture fund",
             "about": "About",
             "projects": "Projects",
             "forInvestors": "For investors",
@@ -282,13 +288,14 @@
             "title": "An ecosystem for the development and financing of artificial intelligence and blockchain technology projects",
             "subtitle": "The main beneficiary of high-tech development should be an ordinary man.",
             "downloadConcept": "Download the concept",
-            "advantageTitle1": "10 147",
-            "advantageSubtitle2": "Active participants in the ecosystem",
-            "advantageTitle2": "70 000",
-            "advantageSubtitle3": "Countries in the DigiU ecosystem",
-            "advantageTitle3": "182",
-            "advantageTitle4": "28",
-            "advantageSubtitle4": "Number of projects in the portfolio"
+            "itemTitle1": "10 147",
+            "itemText1": "Active participants in the ecosystem",
+            "itemTitle2": "70 000",
+            "itemText2": "Сommunity by 2021",
+            "itemTitle3": "182",
+            "itemText3": "Countries in the DigiU ecosystem",
+            "itemTitle4": "28",
+            "itemText4": "Number of projects in the portfolio"
         },
         "news": {
             "title": "News",
@@ -303,7 +310,7 @@
             "newsText3": "The owner of Hunter-Service approached us with a request to optimise the process of controlling employee activity at one of its car washes."
         },
         "ecosystem": {
-            "titile": "DigiU Ecosystem",
+            "title": "DigiU Ecosystem",
             "itemTitle1": "Blockchain lab",
             "itemText1": "Development of blockchain technology projects.",
             "itemTitle2": "Asset management",
@@ -375,7 +382,7 @@
             "itemText2": "Free introductory course for those who want to start earning on the cryptocurrency market",
             "itemTitle3": "Cryptocurrencies 2.0 DeFi Course",
             "itemText3": "Gain practical skills to make money in the crypto market in just 8 lessons",
-            "freeСourse": "Access the free course: How to become a venture capitalist",
+            "freeCource": "Access the free course: How to become a venture capitalist",
             "button": "Get access"
         },
         "subscribe": {
@@ -386,10 +393,12 @@
         "footer": {
             "title": "Development and financing of artificial intelligence and blockchain technologies",
             "ecosystem": "DigiU Ecosystem",
-            "venture ": "Venture fund",
+            "venture": "Venture fund",
             "ai": "DigiU Artificial Intelligence Lab",
             "lab": "DigiU.Lab",
-            "contacts": "ANO \"DIGITALYOU\" \n PSRN 1195476086740 \n Tax Payer Number 5405050584 \n office 701, 48 Kirova St., \n Novosibirsk, Russia \n 630102 \n current account 4070381030000712970 with Tinkoff Bank JSC\n E-mail: info@digiu.ai \n Tel.: +7-383-258-13-99, +7-923-142-45-86"
+            "contacts": "ANO \"DIGITALYOU\" \n PSRN 1195476086740 \n Tax Payer Number 5405050584 \n office 701, 48 Kirova St., \n Novosibirsk, Russia \n 630102 \n current account 4070381030000712970 with Tinkoff Bank JSC\n E-mail: info@digiu.ai \n Tel.: +7-383-258-13-99, +7-923-142-45-86",
+            "privacy": "Privacy Policy",
+            "offer": "Public offer"
         }
     },
     "VN": {
@@ -400,7 +409,7 @@
             "lab": "Blockchain lab",
             "assetManagement": "ASSET MANAGEMENT",
             "ai": "AI development",
-            "venture ": "venture fund",
+            "venture": "venture fund",
             "about": "About",
             "projects": "Projects",
             "forInvestors": "For investors",
@@ -413,13 +422,14 @@
             "title": "An ecosystem for the development and financing of artificial intelligence and blockchain technology projects",
             "subtitle": "The main beneficiary of high-tech development should be an ordinary man.",
             "downloadConcept": "Download the concept",
-            "advantageTitle1": "10 147",
-            "advantageSubtitle2": "Active participants in the ecosystem",
-            "advantageTitle2": "70 000",
-            "advantageSubtitle3": "Countries in the DigiU ecosystem",
-            "advantageTitle3": "182",
-            "advantageTitle4": "28",
-            "advantageSubtitle4": "Number of projects in the portfolio"
+            "itemTitle1": "10 147",
+            "itemText1": "Active participants in the ecosystem",
+            "itemTitle2": "70 000",
+            "itemText2": "Сommunity by 2021",
+            "itemTitle3": "182",
+            "itemText3": "Countries in the DigiU ecosystem",
+            "itemTitle4": "28",
+            "itemText4": "Number of projects in the portfolio"
         },
         "news": {
             "title": "News",
@@ -434,7 +444,7 @@
             "newsText3": "The owner of Hunter-Service approached us with a request to optimise the process of controlling employee activity at one of its car washes."
         },
         "ecosystem": {
-            "titile": "DigiU Ecosystem",
+            "title": "DigiU Ecosystem",
             "itemTitle1": "Blockchain lab",
             "itemText1": "Development of blockchain technology projects.",
             "itemTitle2": "Asset management",
@@ -506,7 +516,7 @@
             "itemText2": "Free introductory course for those who want to start earning on the cryptocurrency market",
             "itemTitle3": "Cryptocurrencies 2.0 DeFi Course",
             "itemText3": "Gain practical skills to make money in the crypto market in just 8 lessons",
-            "freeСourse": "Access the free course: How to become a venture capitalist",
+            "freeCource": "Access the free course: How to become a venture capitalist",
             "button": "Get access"
         },
         "subscribe": {
@@ -517,10 +527,12 @@
         "footer": {
             "title": "Development and financing of artificial intelligence and blockchain technologies",
             "ecosystem": "DigiU Ecosystem",
-            "venture ": "Venture fund",
+            "venture": "Venture fund",
             "ai": "DigiU Artificial Intelligence Lab",
             "lab": "DigiU.Lab",
-            "contacts": "ANO \"DIGITALYOU\" \n PSRN 1195476086740 \n Tax Payer Number 5405050584 \n office 701, 48 Kirova St., \n Novosibirsk, Russia \n 630102 \n current account 4070381030000712970 with Tinkoff Bank JSC\n E-mail: info@digiu.ai \n Tel.: +7-383-258-13-99, +7-923-142-45-86"
+            "contacts": "ANO \"DIGITALYOU\" \n PSRN 1195476086740 \n Tax Payer Number 5405050584 \n office 701, 48 Kirova St., \n Novosibirsk, Russia \n 630102 \n current account 4070381030000712970 with Tinkoff Bank JSC\n E-mail: info@digiu.ai \n Tel.: +7-383-258-13-99, +7-923-142-45-86",
+            "privacy": "Privacy Policy",
+            "offer": "Public offer"
         }
     }
 }

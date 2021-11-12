@@ -4,6 +4,7 @@ import Layout from "../../components/Layout";
 import WithBg from "@components/Background";
 import Subtitle from "@components/Subtitile";
 import TechnologyItem from "@layout/AI/TechnologyItem";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -53,27 +54,6 @@ const EcosystemList = styled.div`
   }
 `;
 
-const cards = [
-  {
-    title: "DigiU.Voice",
-    img: "/images/ai/voice.png",
-    subtitle:
-      "Запатентованная технология клонирования речи. \nDigiU.Voice трансформирует текст в речь с помощью ИИ-технологии text-to-speech, позволяет воспроизводить интонации, акценты и паузы конкретного человека.",
-  },
-  {
-    title: "DigiU.Vision",
-    img: "/images/ai/vision.png",
-    subtitle:
-      "DigiU.Vision технология компьютерного зрения позволяющая различать пердметы, возраст, эмоции людей. ",
-  },
-  {
-    title: "DigiU.Prophert",
-    img: "/images/ai/prophert.png",
-    subtitle:
-      "Технология предективной аналитики позволяющая предсказывать движение рынка с использовнием нейросетей.",
-  },
-];
-
 const TechnologiesList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -88,19 +68,30 @@ const TechnologiesList = styled.div`
   }
 `;
 const AI: React.FC<IProps> = () => {
+  const { ai } = useLang();
   return (
-    <WithBg background="/images/bg3.jpg" position="center top">
+    <WithBg background="/images/head/bg.png" position="center top">
       <Root>
-        <PageTitle>Разработки в области ИИ</PageTitle>
-        <Subtitle>
-          Лаборатория ИИ включает в себя такие области разработки, как речевые
-          технологии и обработка естественного языка, компьтерное зрение,
-          предиктивная аналитика. Каждая область разработок являюется
-          автономными сервисами и приложениями, которые имеют высокий потенциал
-          взрывного роста в количестве пользователей и капитализации.
-        </Subtitle>
+        <PageTitle>{ai.title}</PageTitle>
+        <Subtitle>{ai.subtitle}</Subtitle>
         <TechnologiesList>
-          {cards.map((item) => (
+          {[
+            {
+              title: ai.itemTitle1,
+              img: "/images/ai/voice.png",
+              subtitle: ai.itemText1,
+            },
+            {
+              title: ai.itemTitle2,
+              img: "/images/ai/vision.png",
+              subtitle: ai.itemText2,
+            },
+            {
+              title: ai.itemTitle3,
+              img: "/images/ai/prophert.png",
+              subtitle: ai.itemText3,
+            },
+          ].map((item) => (
             <TechnologyItem {...item} key={item.title} />
           ))}
         </TechnologiesList>

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import WithBg from "@components/Background";
 import Layout from "@components/Layout";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -148,29 +149,27 @@ const SocialIcon = styled.img`
 `;
 
 const Footer: React.FC<IProps> = () => {
+  const { footer, menu } = useLang();
   return (
-    <WithBg background="/images/bg3.jpg" position="bottom">
+    <WithBg background="/images/head/bg.png" position="bottom">
       <Root>
         <Wrapper>
           <div>
             <Top>
               <Logo src="/images/head/logo.png" alt="logo" />
-              <SmallText>
-                Разработка и финансирование проектов в области искусственного
-                интеллекта и блок-чейн технологий
-              </SmallText>
+              <SmallText>{footer.title}</SmallText>
             </Top>
             <Navigation>
               <div>
-                <div className="nav">Главная</div>
-                <div className="nav">Новости</div>
-                <div className="nav">Экосистема DigiU</div>
-                <div className="nav">Блокчейн лаборотория</div>
+                <div className="nav">{menu.home}</div>
+                <div className="nav">{menu.news}</div>
+                <div className="nav">{menu.ecosystem}</div>
+                <div className="nav">{menu.lab}</div>
               </div>
               <div>
-                <div className="nav">Управление активами</div>
-                <div className="nav">Разработки ИИ</div>
-                <div className="nav">Венчурный фонд</div>
+                <div className="nav">{menu.assetManagement}</div>
+                <div className="nav">{menu.ai}</div>
+                <div className="nav">{menu.venture}</div>
               </div>
             </Navigation>
           </div>
@@ -183,15 +182,10 @@ const Footer: React.FC<IProps> = () => {
           </Links>
         </Wrapper>
         <SecondaryInfo>
-          <Text>
-            АНО “ЦифровойТЫ” ОГРН 1195476086740 ИНН 5405050584 630102,
-            Новосибирск, ул. Кирова, 48, офис 701 Р/с 407038103000000712970 в АО
-            “Тинькофф Банк” E-mail: info@digiu.ai Тел.: +7-383-258-13-99,
-            +7-923-142-45-86
-          </Text>
+          <Text>{footer.contacts}</Text>
           <div className="buttom">
-            <Text>Политика конфиденциальности</Text>
-            <Text>Публичная оферта</Text>
+            <Text>{footer.privacy}</Text>
+            <Text>{footer.offer}</Text>
           </div>
         </SecondaryInfo>
       </Root>

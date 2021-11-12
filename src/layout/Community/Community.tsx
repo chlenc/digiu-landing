@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import WithBg from "@components/Background";
 import Button from "@components/Button";
+import { useLang } from "@src/hooks/useLang";
 
 interface IProps {}
 
@@ -75,18 +76,13 @@ const SubscribeButton = styled(Button)`
 `;
 
 const Community: React.FC<IProps> = () => {
+  const { community } = useLang();
   return (
-    <WithBg background="/images/bg3.jpg" position="bottom">
+    <WithBg background="/images/head/bg.png" position="bottom">
       <Root>
-        <Title>Международное сообщество инвесторов DigiU.Partners</Title>
-        <Subtitle>
-          Комьюнити DigiU насчитывает 88 000 партнеров из 182 стран мира.
-          DigiU.Partners помогает инвесторам разобраться в проекте, создает
-          комьюнити, организовывает вебинары, конференции и помогает заниматься
-          информационным продвижением проекта. Каждый партнер компании получает
-          быструю обратную связь, ответы на интересующие вопросы, поддержку.
-        </Subtitle>
-        <SubscribeButton>Получить консультацию</SubscribeButton>
+        <Title>{community.title}</Title>
+        <Subtitle>{community.subtitle}</Subtitle>
+        <SubscribeButton>{community.button}</SubscribeButton>
       </Root>
     </WithBg>
   );
