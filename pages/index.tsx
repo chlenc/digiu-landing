@@ -14,7 +14,6 @@ import Venture from "@layout/Venture";
 import BecomeInvestor from "@layout/BecomeInvestor";
 import Partners from "@layout/Partners";
 import Community from "@layout/Community";
-import Education from "@layout/Education";
 import Mailing from "@layout/Mailing";
 
 const Root = styled.div``;
