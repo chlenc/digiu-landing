@@ -40,8 +40,8 @@ const Title = styled.h1`
     margin-top: 128px;
   }
   @media (min-width: 1280px) {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 400;
     line-height: 64px;
     text-align: left;
     max-width: 1170px;

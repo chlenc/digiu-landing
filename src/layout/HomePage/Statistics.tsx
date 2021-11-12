@@ -27,7 +27,7 @@ const Root = styled.div`
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    margin-top: 80px;
+    margin-top: 120px;
     max-width: fit-content;
   }
 `;
@@ -55,7 +55,10 @@ const Subtitle = styled.div`
   }
   @media (min-width: 1280px) {
     text-align: left;
-    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
   }
 `;
 

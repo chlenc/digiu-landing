@@ -13,12 +13,6 @@ const Root = styled(Layout)`
   align-items: center;
   padding-top: 80px;
   background: #fff;
-  overflow: scroll;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  ::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
   @media (min-width: 480px) {
     padding-top: 120px;
   }
@@ -43,6 +37,15 @@ const PageTitle = styled.div`
 const NewsList = styled.div`
   display: flex;
   flex-direction: column;
+
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   & > * {
     margin-bottom: 32px;
   }

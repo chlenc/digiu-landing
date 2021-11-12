@@ -13,6 +13,7 @@ const Root = styled.div<{ dark?: boolean }>`
   color: ${({ dark }) => (dark ? "#ffffff" : "#ffffff")};
   width: 83px;
   cursor: pointer;
+  z-index: 1;
 `;
 const LangIcon = styled.img`
   width: 24px;

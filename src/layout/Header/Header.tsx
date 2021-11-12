@@ -5,6 +5,7 @@ import React from "react";
 import Layout from "@components/Layout";
 
 import LanguageSelect from "@layout/Header/LanguageSelect";
+import Button from "@components/Button";
 
 interface IProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -36,14 +37,80 @@ const Menu = styled.img`
   width: 24px;
 `;
 
+const MobileRow = styled(Row)`
+  @media (min-width: 1280px) {
+    display: none;
+  }
+`;
+const DesktopRow = styled(Row)`
+  @media (max-width: 1280px) {
+    display: none;
+  }
+`;
+
+const TextButton = styled.a`
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+`;
+
+const MenuItemsWrapper = styled(DesktopRow)`
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+`;
+
+const MenuItemsRow = styled(Layout)`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 1500px) and (min-width: 1280px) {
+    padding-left: 112px;
+  } ;
+`;
+
 const Header: React.FC<IProps> = ({ ...rest }) => {
   return (
     <Root {...rest}>
-      <Logo src="/images/head/logo.png" alt="logo" />
-      <Row style={{ width: "auto" }}>
-        <LanguageSelect />
-        <SizedBox width={30} />
-        <Menu src="/images/head/menu.svg" alt="menu" />
+      <Row
+        style={{ position: "relative" }}
+        mainAxisSize="stretch"
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Logo src="/images/head/logo.png" alt="logo" />
+        <MenuItemsWrapper>
+          <MenuItemsRow>
+            <TextButton>ГЛАВНАЯ</TextButton>
+            <SizedBox width={48} />
+            <TextButton>НОВОСТИ</TextButton>
+            <SizedBox width={48} />
+            <TextButton>Экосистема DigiU</TextButton>
+          </MenuItemsRow>
+        </MenuItemsWrapper>
+        <Row style={{ width: "auto" }} alignItems="center">
+          <LanguageSelect />
+          <SizedBox width={30} />
+          <MobileRow>
+            <Menu src="/images/head/menu.svg" alt="menu" />
+          </MobileRow>
+          <DesktopRow style={{ zIndex: 1 }} alignItems="center">
+            <TextButton>Войти</TextButton>
+            <SizedBox width={48} />
+            <Button style={{ padding: "0 48px" }}>Регистрация</Button>
+          </DesktopRow>
+        </Row>
       </Row>
     </Root>
   );
