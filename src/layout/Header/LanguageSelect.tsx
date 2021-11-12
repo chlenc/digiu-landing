@@ -8,7 +8,7 @@ const Root = styled.div<{ dark?: boolean }>`
   align-items: center;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   color: ${({ dark }) => (dark ? "#ffffff" : "#ffffff")};
   width: 83px;
