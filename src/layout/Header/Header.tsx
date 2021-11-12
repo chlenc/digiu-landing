@@ -158,7 +158,7 @@ const Header: React.FC<IProps> = ({ ...rest }) => {
           <DesktopRow style={{ zIndex: 1 }} alignItems="center">
             <TextButton>{menu.login}</TextButton>
             <SizedBox width={48} />
-            <Button style={{ padding: "0 48px" }}>{menu.register}</Button>
+            <Button style={{ width: 256 }}>{menu.register}</Button>
           </DesktopRow>
         </Row>
       </Row>

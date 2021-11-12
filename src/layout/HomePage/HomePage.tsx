@@ -83,6 +83,7 @@ const HomePage: React.FC<IProps> = () => {
       <Title>{l.head.title}</Title>
       <Subtitle>{l.head.subtitle}</Subtitle>
       <Button
+        style={{ width: 272 }}
         onClick={() =>
           (window.location.href =
             "https://drive.google.com/a/digiu.ai/uc?id=1U-p4jPWmWRawo8I_a6vokakZgUa_3GAh&export=download")
