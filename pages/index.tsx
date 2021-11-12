@@ -38,7 +38,11 @@ const Home: NextPage = () => {
       </Head>
 
       <Main>
-        <BackgroundWrapper background="/images/head/bg.png" position="left">
+        <BackgroundWrapper
+          style={{ minHeight: "100vh" }}
+          background="/images/head/bg.png"
+          position="left"
+        >
           <Header style={{ position: "absolute", top: 0, left: 0, right: 0 }} />
           <HomePage />
         </BackgroundWrapper>

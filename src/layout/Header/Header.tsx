@@ -1,8 +1,10 @@
 import { Row } from "@components/Flex";
 import SizedBox from "@components/SizedBox";
 import styled from "@emotion/styled";
-import React, { useState } from "react";
+import React from "react";
 import Layout from "@components/Layout";
+
+import LanguageSelect from "@layout/Header/LanguageSelect";
 
 interface IProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -34,44 +36,12 @@ const Menu = styled.img`
   width: 24px;
 `;
 
-interface ILanguage {
-  name: string;
-  icon: string;
-}
-
-const Lang = styled.div<{ dark?: boolean }>`
-  display: flex;
-  align-items: center;
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: ${({ dark }) => (dark ? "#ffffff" : "#ffffff")};
-`;
-const LangIcon = styled.img`
-  width: 24px;
-  height: 24px;
-  margin-right: 9px;
-  flex-direction: column;
-`;
-
-const languages: ILanguage[] = [
-  { name: "RUS", icon: "/images/head/RUS.svg" },
-  { name: "ENG", icon: "/images/head/ENG.svg" },
-  { name: "FRA", icon: "/images/head/FRA.svg" },
-  { name: "TUR", icon: "/images/head/TUR.svg" },
-];
-
 const Header: React.FC<IProps> = ({ ...rest }) => {
-  const [lang, setLang] = useState<ILanguage>(languages[0]);
   return (
     <Root {...rest}>
       <Logo src="/images/head/logo.png" alt="logo" />
       <Row style={{ width: "auto" }}>
-        <Lang>
-          <LangIcon src={lang.icon} alt={lang.name} />
-          <div>RU</div>
-        </Lang>
+        <LanguageSelect />
         <SizedBox width={30} />
         <Menu src="/images/head/menu.svg" alt="menu" />
       </Row>
