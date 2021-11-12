@@ -23,7 +23,7 @@ const Root = styled(Layout)`
 
 const Title = styled.h1`
   font-family: Montserrat;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   display: flex;
@@ -51,13 +51,13 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #9ab7ff;
+  color: #ffffff;
   margin-top: 24px;
   margin-bottom: 24px;
   @media (min-width: 480px) {
@@ -70,6 +70,7 @@ const Subtitle = styled.h2`
     font-size: 20px;
     line-height: 32px;
     text-align: left;
+    margin-top: 32px;
     max-width: 792px;
   }
 `;

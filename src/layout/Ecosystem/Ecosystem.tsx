@@ -17,10 +17,6 @@ const Root = styled(Layout)`
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  @media (min-width: 1280px) {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
 `;
 
 const PageTitle = styled.div`
@@ -33,6 +29,7 @@ const PageTitle = styled.div`
   margin-bottom: 32px;
   width: 100%;
   @media (min-width: 480px) {
+    margin-bottom: 64px;
     font-size: 40px;
     line-height: 48px;
   }
