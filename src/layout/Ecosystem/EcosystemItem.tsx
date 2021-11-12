@@ -63,7 +63,7 @@ const Root = styled.div`
     }
   }
   @media (min-width: 1280px) {
-    padding: 107px 24px;
+    padding: 80px 24px;
     width: 380px;
   }
 `;
