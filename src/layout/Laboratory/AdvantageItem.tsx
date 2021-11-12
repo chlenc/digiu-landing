@@ -36,9 +36,12 @@ const Text = styled.div`
   color: #ffffff;
   white-space: pre-wrap;
   @media (min-width: 480px) {
-    text-align: left;
     font-size: 16px;
     line-height: 24px;
+  }
+  @media (min-width: 1280px) {
+    text-align: left;
+    max-width: 328px;
   }
 `;
 

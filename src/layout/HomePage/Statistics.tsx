@@ -15,9 +15,14 @@ const Root = styled.div`
   grid-template-columns: 1fr;
   row-gap: 24px;
   margin-top: 32px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
   @media (min-width: 480px) {
     grid-template-columns: 1fr 1fr;
     margin-top: 64px;
+    column-gap: 120px;
+    row-gap: 44px;
   }
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -28,9 +33,6 @@ const Root = styled.div`
 `;
 
 const Title = styled.div`
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -42,25 +44,29 @@ const Title = styled.div`
   }
 `;
 const Subtitle = styled.div`
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 20px;
   text-align: center;
   white-space: pre-wrap;
   color: #ffffff;
+
+  @media (min-width: 480px) {
+    font-weight: normal;
+  }
   @media (min-width: 1280px) {
     text-align: left;
+    font-weight: 600;
   }
 `;
 
 const StatisticsRow = styled.div`
   display: flex;
   flex-direction: column;
+
   & > :first-of-type {
     margin-bottom: 12px;
   }
+
   @media (min-width: 1280px) {
     width: fit-content;
   }

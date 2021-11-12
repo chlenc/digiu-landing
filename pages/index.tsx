@@ -12,6 +12,7 @@ import Management from "@layout/Management";
 import AI from "@layout/AI";
 import Venture from "@layout/Venture";
 import BecomeInvestor from "@layout/BecomeInvestor";
+import Education from "@layout/Education";
 import Partners from "@layout/Partners";
 import Community from "@layout/Community";
 import Mailing from "@layout/Mailing";

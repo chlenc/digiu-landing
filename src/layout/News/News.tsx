@@ -15,9 +15,6 @@ const Root = styled(Layout)`
   @media (min-width: 480px) {
     padding-top: 120px;
   }
-  @media (min-width: 1280px) {
-    padding-top: 160px;
-  }
 `;
 
 const PageTitle = styled.div`
@@ -50,7 +47,6 @@ const NewsList = styled.div`
   @media (min-width: 480px) {
     max-width: calc(100% + 48px);
     flex-direction: row;
-    overflow: scroll;
 
     & > :first-of-type {
       margin-left: 24px;
