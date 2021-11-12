@@ -47,7 +47,6 @@ const NewsList = styled.div`
   @media (min-width: 480px) {
     max-width: calc(100% + 48px);
     flex-direction: row;
-    overflow: scroll;
 
     & > :first-of-type {
       margin-left: 24px;
