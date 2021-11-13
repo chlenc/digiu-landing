@@ -21,8 +21,8 @@
             "subtitle": "Основным выгодоприобретателем от развития высоких технологий\nдолжен быть обычный человек.",
             "downloadConcept": "Скачать концепцию",
             "itemTitle1": "10 147",
-            "itemText1": "Активных\nучастников экосистемы",
-            "itemTitle2": "70 000",
+            "itemText1": "Активных участников экосистемы",
+            "itemTitle2": "100 031",
             "itemText2": "Численность комьюнити\nпо итогам 2021 года",
             "itemTitle3": "182",
             "itemText3": "Стран, состоящих\nв экосистеме DigiU",
@@ -31,10 +31,10 @@
         },
         "news": {
             "title": "Новости",
-            "newsDate1": "21.07.2021",
+            "newsDate1": "08.09.2021",
             "newsTitle1": "Старт альфа-тестирования\n платформы EYWA",
             "newsText1": "8 сентября 2021 года мы запустили первую фазу альфа-тестирования платформы EYWA- первого потенциального\nединорога экосистемы",
-            "newsDate2": "21.07.2021",
+            "newsDate2": "25.08.2021",
             "newsTitle2": "Добро пожаловать в офис DigiU!",
             "newsText2": "Готовы узнать, как проходит рабочий день DigiU? Кто отвечает за личный кабинет, создает ИИ-разработки DigiU, ищет самых лучших специалистов в команду\nпо всему миру?",
             "newsDate3": "21.07.2021",
@@ -44,13 +44,13 @@
         "ecosystem": {
             "title": "Экосистема DigiU",
             "itemTitle1": "Блокчейн лаборатория",
-            "itemText1": "Разработка проектов\nв области блок-чейн технологий.",
+            "itemText1": "Разработка проектов\nв области блокчейн технологий.",
             "itemTitle2": "Управление активами",
             "itemText2": "Доверительное управление\nкриптоактивами",
             "itemTitle3": "Лаборатория ИИ",
-            "itemText3": "Разработка проектов\nв области искуственного интеллекта.",
+            "itemText3": "Разработка проектов\nв области искусственного интеллекта.",
             "itemTitle4": "Венчурный фонд",
-            "itemText4": "Инвестиции в технологии\nи проекты в области ИИ \nи блок-чейна.",
+            "itemText4": "Инвестиции в технологии\nи проекты в области ИИ \nи блокчейна.",
             "itemTitle5": "Международное сообщество\nинвесторов",
             "itemText5": "Финансирование и информационное\nпродвижение проекта",
             "itemTitle6": "Образовательная платформа",
@@ -58,27 +58,27 @@
         },
         "lab": {
             "title": "Блокчейн лаборатория",
-            "subtitle": "Разработкой блокчейн проектов занимается подразделение DigiU.Lab\n Области деятельности подразделения лежат в исследовании блокчейна , создании собственной DeFi экостистемы, разработки продуктов. Основным проектом блокчейн лаборатории является Eywa.Finance - кроссчейн протокол передачи данных и ликвидности.",
+            "subtitle": "Разработкой блокчейн проектов занимается подразделение DigiU.Lab\n Области деятельности подразделения лежат в исследовании блокчейна , создании собственной DeFi экосистемы, разработки продуктов. Основным проектом блокчейн лаборатории является Eywa.Finance - кроссчейн протокол передачи данных и ликвидности.",
             "item1": "Участник и призер\n международных Хакатонов",
-            "item2": "Eywa.Finance - первый продукт на\n стадии альфа-тестирования",
+            "item2": "Eywa.Finance — первый продукт на\n стадии альфа-тестирования",
             "item3": "В проекты лаборатории\n инвестируют международные\n венчурные фонды"
         },
         "assetManagement": {
             "title": "Управление активами",
-            "subtitle": "DigiU.Wealth - инвестиционный продукт экосистемы , приносящий ежемесячную прибыль без риска просадки депозита в ETH, BTC, USDT с октября 2020 года.",
+            "subtitle": "DigiU.Wealth —  инвестиционный продукт экосистемы , приносящий ежемесячную прибыль без риска просадки депозита в ETH, BTC, USDT с октября 2020 года.",
             "item1": "Пассивный заработок на рынке DeFi",
             "item2": "Минимизация риска за счет\n независимых аудитов смарт-контрактов",
             "item3": "Доходность более 30% годовых в USDT"
         },
         "ai": {
             "title": "Разработки в области Искусственного интеллекта",
-            "subtitle": "Лаборатория ИИ включает в себя такие области разработки, как речевые технологии и обработка естественного языка, компьтерное зрение, предиктивная аналитика. Каждая область разработок являюется автономными сервисами и приложениями, которые имеют высокий потенциал взрывного роста в количестве пользователей и капитализации.",
+            "subtitle": "Лаборатория ИИ включает в себя такие области разработки, как речевые технологии и обработка естественного языка, компьютерное зрение, предиктивная аналитика. Каждая область разработок является автономными сервисами и приложениями, которые имеют высокий потенциал взрывного роста в количестве пользователей и капитализации.",
             "itemTitle1": "DigiU.Voice",
             "itemText1": "Запатентованная технология клонирования речи.\n DigiU.Voice трансформирует текст в речь с помощью ИИ-технологии text-to-speech, позволяет воспроизводить интонации, акценты и паузы конкретного человека.",
             "itemTitle2": "DigiU.Vision",
-            "itemText2": "DigiU.Vision технология компьютерного зрения позволяющая различать пердметы, возраст, эмоции людей.",
-            "itemTitle3": "DigiU.Prophert",
-            "itemText3": "Технология предективной аналитики позволяющая предсказывать движение рынка с использовнием нейросетей."
+            "itemText2": "DigiU.Vision технология компьютерного зрения позволяющая различать предметы, возраст, эмоции людей.",
+            "itemTitle3": "DigiU.Prophet",
+            "itemText3": "Технология предиктивной аналитики позволяющая предсказывать движение рынка с использованием нейросетей."
         },
         "venture": {
             "title": "Международный венчурный\n фонд для IT-Стартапов",
@@ -101,25 +101,25 @@
         },
         "community": {
             "title": "Международное сообщество инвесторов\n DigiU.Partners",
-            "subtitle": "Комьюнити DigiU насчитывает 88 000 партнеров из 182 стран мира. DigiU.Partners помогает инвесторам разобраться в проекте, создает комьюнити, организовывает вебинары, конференции и помогает заниматься информационным продвижением проекта. Каждый партнер компании получает быструю обратную связь, ответы на интересующие вопросы, поддержку.",
+            "subtitle": "Комьюнити DigiU насчитывает 100 031 партнеров из 182 стран мира. DigiU.Partners помогает инвесторам разобраться в проекте, создает сообщество, организовывает вебинары, конференции и помогает заниматься информационным продвижением проекта. Каждый партнер компании получает быструю обратную связь, ответы на интересующие вопросы, поддержку.",
             "text": "Узнайте как стать совладельцем сотен стартапов\n в области блокчейн и ИИ от 500$",
             "button": "Стать частью сообщества"
         },
         "education": {
             "title": "Образовательные программы",
             "subtitle": "Образовательная платформа DigiU.Education предоставляет возможность всем желающим получать платное\n и бесплатное образование в сфере финансов, инвестиций, DeFi.",
-            "itemTitle1": "Курс “Как стать\n венчурным инвестором”",
+            "itemTitle1": "Курс «Как стать\n венчурным инвестором»",
             "itemText1": "Бесплатный курс для новичков\n в мире венчурных инвестиций",
-            "itemTitle2": "Курс “Введение в криптовалюту”",
+            "itemTitle2": "Курс «Введение в криптовалюту»",
             "itemText2": "Бесплатный вводный курс для\n тех, кто хочет начать зарабатывать\n на криптовалютном рынке",
-            "itemTitle3": "Курс “Криптовалюты 2.0 DeFi”",
+            "itemTitle3": "Курс «Криптовалюты 2.0 DeFi»",
             "itemText3": "Получите практические навыки\n заработка на крипторынке\n всего за 8 уроков",
-            "freeCource": "Получите доступ к бесплатному курсу:\n Как стать венчурным инвестором",
+            "freeCource": "Получите доступ к бесплатному курсу:\n «Как стать венчурным инвестором»",
             "button": "Получить доступ"
         },
         "subscribe": {
             "title": "Получайте новости первым!",
-            "subtitle": "Подпишитесь на нашу рассылку, чтобы узнать больше о новых инвестициях, а так же секреты успешных стартапов и венчурных фондов.",
+            "subtitle": "Подпишитесь на нашу рассылку, чтобы узнать больше о новых инвестициях, а также секреты успешных стартапов и венчурных фондов.",
             "button": "Подписаться"
         },
         "footer": {
@@ -155,8 +155,8 @@
             "subtitle": "The main beneficiary of high-tech development should be an ordinary man.",
             "downloadConcept": "Download the concept",
             "itemTitle1": "10 147",
-            "itemText1": "Active\nparticipants in the ecosystem",
-            "itemTitle2": "70 000",
+            "itemText1": "Active participants in the ecosystem",
+            "itemTitle2": "100 031",
             "itemText2": "Сommunity by 2021",
             "itemTitle3": "182",
             "itemText3": "Countries in the DigiU ecosystem",
@@ -165,10 +165,10 @@
         },
         "news": {
             "title": "News",
-            "newsDate1": "21.07.2021",
+            "newsDate1": "08.09.2021",
             "newsTitle1": "Launch of the EYWA platform alpha testing",
             "newsText1": "On 8 September 2021, we launched the first phase of the alpha testing of the EYWA platform - the first potential\n ecosystem unicorn.",
-            "newsDate2": "21.07.2021",
+            "newsDate2": "25.08.2021",
             "newsTitle2": "Welcome to the DigiU office!",
             "newsText2": "Ready to find out how the working day at DigiU goes? Who is in charge of the front office, creating DigiU's AI development, and looking for the best people to join the team worldwide?",
             "newsDate3": "21.07.2021",
@@ -235,7 +235,7 @@
         },
         "community": {
             "title": "DigiU.Partners international community of investors",
-            "subtitle": "DigiU community has 88,000 partners from 182 countries around the world. DigiU.Partners helps investors to understand the project, creates a community, organizes webinars, conferences and helps to deal with the informational promotion of the project. Every partner gets quick feedback, answers to their questions and support.",
+            "subtitle": "DigiU community has 100 031 partners from 182 countries around the world. DigiU.Partners helps investors to understand the project, creates a community, organizes webinars, conferences and helps to deal with the informational promotion of the project. Every partner gets quick feedback, answers to their questions and support.",
             "text": "Learn how to become a co-owner of hundreds of blockchain and AI startups from $500",
             "button": "Get a consultation"
         },
@@ -290,7 +290,7 @@
             "downloadConcept": "Download the concept",
             "itemTitle1": "10 147",
             "itemText1": "Active\nparticipants in the ecosystem",
-            "itemTitle2": "70 000",
+            "itemTitle2": "100 031",
             "itemText2": "Сommunity by 2021",
             "itemTitle3": "182",
             "itemText3": "Countries in the DigiU ecosystem",
@@ -299,10 +299,10 @@
         },
         "news": {
             "title": "News",
-            "newsDate1": "21.07.2021",
+            "newsDate1": "08.09.2021",
             "newsTitle1": "Launch of the EYWA platform alpha testing",
             "newsText1": "On 8 September 2021, we launched the first phase of the alpha testing of the EYWA platform - the first potential\n ecosystem unicorn.",
-            "newsDate2": "21.07.2021",
+            "newsDate2": "25.08.2021",
             "newsTitle2": "Welcome to the DigiU office!",
             "newsText2": "Ready to find out how the working day at DigiU goes? Who is in charge of the front office, creating DigiU's AI development, and looking for the best people to join the team worldwide?",
             "newsDate3": "21.07.2021",
@@ -369,7 +369,7 @@
         },
         "community": {
             "title": "DigiU.Partners international community of investors",
-            "subtitle": "DigiU community has 88,000 partners from 182 countries around the world. DigiU.Partners helps investors to understand the project, creates a community, organizes webinars, conferences and helps to deal with the informational promotion of the project. Every partner gets quick feedback, answers to their questions and support.",
+            "subtitle": "DigiU community has 100 031 partners from 182 countries around the world. DigiU.Partners helps investors to understand the project, creates a community, organizes webinars, conferences and helps to deal with the informational promotion of the project. Every partner gets quick feedback, answers to their questions and support.",
             "text": "Learn how to become a co-owner of hundreds of blockchain and AI startups from $500",
             "button": "Get a consultation"
         },
@@ -424,7 +424,7 @@
             "downloadConcept": "Download the concept",
             "itemTitle1": "10 147",
             "itemText1": "Active\nparticipants in the ecosystem",
-            "itemTitle2": "70 000",
+            "itemTitle2": "100 031",
             "itemText2": "Сommunity by 2021",
             "itemTitle3": "182",
             "itemText3": "Countries in the DigiU ecosystem",
@@ -433,10 +433,10 @@
         },
         "news": {
             "title": "News",
-            "newsDate1": "21.07.2021",
+            "newsDate1": "08.09.2021",
             "newsTitle1": "Launch of the EYWA platform alpha testing",
             "newsText1": "On 8 September 2021, we launched the first phase of the alpha testing of the EYWA platform - the first potential\n ecosystem unicorn.",
-            "newsDate2": "21.07.2021",
+            "newsDate2": "25.08.2021",
             "newsTitle2": "Welcome to the DigiU office!",
             "newsText2": "Ready to find out how the working day at DigiU goes? Who is in charge of the front office, creating DigiU's AI development, and looking for the best people to join the team worldwide?",
             "newsDate3": "21.07.2021",
@@ -503,7 +503,7 @@
         },
         "community": {
             "title": "DigiU.Partners international community of investors",
-            "subtitle": "DigiU community has 88,000 partners from 182 countries around the world. DigiU.Partners helps investors to understand the project, creates a community, organizes webinars, conferences and helps to deal with the informational promotion of the project. Every partner gets quick feedback, answers to their questions and support.",
+            "subtitle": "DigiU community has 100 031 partners from 182 countries around the world. DigiU.Partners helps investors to understand the project, creates a community, organizes webinars, conferences and helps to deal with the informational promotion of the project. Every partner gets quick feedback, answers to their questions and support.",
             "text": "Learn how to become a co-owner of hundreds of blockchain and AI startups from $500",
             "button": "Get a consultation"
         },
