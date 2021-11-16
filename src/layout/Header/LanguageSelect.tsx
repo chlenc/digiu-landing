@@ -25,8 +25,8 @@ const LangIcon = styled.img`
 const iconsMap: Record<string, string> = {
   RU: "/images/head/RUS.svg",
   EN: "/images/head/ENG.svg",
-  FR: "/images/head/FRA.svg",
   VN: "/images/head/VTN.svg",
+  FR: "/images/head/FRA.svg",
 };
 
 const LanguageSelect: React.FC = () => {
