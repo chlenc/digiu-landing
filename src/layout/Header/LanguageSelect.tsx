@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import React from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import React, { useContext } from "react";
+import { langs, LanguageProvider, useLang } from "@src/hooks/useLang";
 
 const Root = styled.div<{ dark?: boolean }>`
   display: flex;
@@ -29,17 +28,15 @@ const iconsMap: Record<string, string> = {
   FR: "/images/head/FRA.svg",
 };
 
-const LanguageSelect: React.FC = () => {
-  const router = useRouter();
-  const { locale } = useRouter();
-
+const LanguageSelect: React.FC<{ onChange: (l: langs) => void }> = ({
+  onChange,
+}) => {
+  const locale = useContext(LanguageProvider);
   return (
-    <Link href={router.route} locale={locale === "RU" ? "EN" : "RU"}>
-      <Root onClick={() => null}>
-        <LangIcon src={iconsMap[locale ?? "RU"]} alt={locale} />
-        <div>{locale}</div>
-      </Root>
-    </Link>
+    <Root onClick={() => onChange(locale === langs.RU ? langs.EN : langs.RU)}>
+      <LangIcon src={iconsMap[locale ?? "RU"]} alt={locale} />
+      <div>{locale}</div>
+    </Root>
   );
 };
 

@@ -16,6 +16,8 @@ import Education from "@layout/Education";
 import Partners from "@layout/Partners";
 import Community from "@layout/Community";
 import Mailing from "@layout/Mailing";
+import { langs, LanguageProvider } from "@src/hooks/useLang";
+import { useState } from "react";
 
 const Root = styled.div``;
 
@@ -27,39 +29,44 @@ const Main = styled.main`
   align-items: center;
   position: relative;
 `;
-
 const Home: NextPage = () => {
+  const [lang, setLang] = useState(langs.RU);
   return (
-    <Root>
-      <Head>
-        <title>DigiU</title>
-        <meta name="description" content="DigiU website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <LanguageProvider.Provider value={lang}>
+      <Root>
+        <Head>
+          <title>DigiU</title>
+          <meta name="description" content="DigiU website" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <Main>
-        <BackgroundWrapper
-          style={{ minHeight: "100vh" }}
-          background="/images/head/bg.png"
-          position="left"
-        >
-          <Header style={{ position: "absolute", top: 0, left: 0, right: 0 }} />
-          <HomePage />
-        </BackgroundWrapper>
-        <News />
-        <Ecosystem />
-        <Laboratory />
-        <Management />
-        <AI />
-        <Venture />
-        <BecomeInvestor />
-        <Partners />
-        <Community />
-        <Education />
-        <Mailing />
-        <Footer />
-      </Main>
-    </Root>
+        <Main>
+          <BackgroundWrapper
+            style={{ minHeight: "100vh" }}
+            background="/images/head/bg.png"
+            position="left"
+          >
+            <Header
+              onChangeLanguage={setLang}
+              style={{ position: "absolute", top: 0, left: 0, right: 0 }}
+            />
+            <HomePage />
+          </BackgroundWrapper>
+          <News />
+          <Ecosystem />
+          <Laboratory />
+          <Management />
+          <AI />
+          <Venture />
+          <BecomeInvestor />
+          <Partners />
+          <Community />
+          <Education />
+          <Mailing />
+          <Footer />
+        </Main>
+      </Root>
+    </LanguageProvider.Provider>
   );
 };
 

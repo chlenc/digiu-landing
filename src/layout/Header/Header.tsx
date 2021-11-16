@@ -6,9 +6,11 @@ import Layout from "@components/Layout";
 
 import LanguageSelect from "@layout/Header/LanguageSelect";
 import Button from "@components/Button";
-import { useLang } from "@src/hooks/useLang";
+import { langs, useLang } from "@src/hooks/useLang";
 
-interface IProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface IProps extends React.HTMLAttributes<HTMLDivElement> {
+  onChangeLanguage: (lang: langs) => void;
+}
 
 const Root = styled(Layout)`
   display: flex;
@@ -113,7 +115,7 @@ const MenuItemsRow = styled(Layout)`
   } ;
 `;
 
-const Header: React.FC<IProps> = ({ ...rest }) => {
+const Header: React.FC<IProps> = ({ onChangeLanguage, ...rest }) => {
   const { menu } = useLang();
   return (
     <Root {...rest}>
@@ -150,7 +152,7 @@ const Header: React.FC<IProps> = ({ ...rest }) => {
           </MenuItemsRow>
         </MenuItemsWrapper>
         <Row style={{ width: "auto" }} alignItems="center">
-          <LanguageSelect />
+          <LanguageSelect onChange={onChangeLanguage} />
           <SizedBox width={30} />
           <MobileRow>
             <Menu src="/images/head/menu.svg" alt="menu" />

@@ -1,5 +1,5 @@
 import localizations from "@src/localizations";
-import { useRouter } from "next/router";
+import React, { useContext } from "react";
 
 export enum langs {
   RU = "RU",
@@ -8,7 +8,9 @@ export enum langs {
   VN = "VN",
 }
 
+export const LanguageProvider = React.createContext<langs>(langs.RU);
+
 export const useLang = () => {
-  const { locale } = useRouter();
-  return localizations[(locale as langs) ?? "RU"];
+  const lang = useContext(LanguageProvider);
+  return localizations[lang];
 };
